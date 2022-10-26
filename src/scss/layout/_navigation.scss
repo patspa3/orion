@@ -1,0 +1,14 @@
+.navbar {
+    ul {
+        li {
+            list-style: none;
+            padding: 0px 2px;
+            :hover {
+                color: #dedede;
+            }
+            a {
+                color: #fefefe;
+            }
+        }
+    }
+}

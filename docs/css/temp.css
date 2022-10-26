@@ -1,0 +1,103 @@
+body {
+  background: #dfdfdf;
+}
+
+* {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+label, textarea {
+  user-select: text;
+}
+
+.wrapper, .wrapper-box {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+
+.wrapper.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  -webkit-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+  height: 100vh;
+  min-width: 15rem;
+  flex-direction: row;
+  align-content: flex-start;
+  flex: 0;
+  background-color: #2a3e4c;
+  overflow-y: auto;
+}
+
+.navbar ul {
+  width: 100%;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.page-title-box {
+  flex: 0 1 40px;
+  background: #FAFAFA;
+  min-height: 40px;
+  border-bottom: 1px solid red;
+}
+
+.tbs-ribbon {
+  flex: 0 1 auto;
+}
+
+.content {
+  background: #fff;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 16px;
+}
+
+footer {
+  background: #FAFAFA;
+  flex: 0 1 40px;
+  min-height: 40px;
+}
+
+.scroll {
+  overflow-y: scroll;
+  max-height: 100%;
+  overflow-x: hidden;
+}
+
+.h-20 {
+  max-height: 20%;
+}
+
+.h-40 {
+  max-height: 40%;
+}
+
+.h-60 {
+  max-height: 60%;
+}
+
+@media (max-width: 1023px) {
+  .navbar {
+    display: none;
+  }
+}

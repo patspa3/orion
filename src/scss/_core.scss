@@ -1,9 +1,11 @@
 @import "modules/bootstrap/bootstrap.scss";
 
 @import "layout/core";
+@import "temp.scss";
 
 
 @import "ui/ribbon.scss";
+@import "ui/tabs";
 
 
 @import "_variables.scss";
