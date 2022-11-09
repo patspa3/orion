@@ -13,10 +13,12 @@
 
 <body>
     <div class="wrapper container">
-        <aside class="navbar">
-            <a href="#"><img src="https://uidemo.tagbites.com/images/logo.png" /> </a>
+        <aside class="navbar show">
+            <a class="img-fluid navbar-brand" href="#"><img src="https://uidemo.tagbites.com/images/logo.png" /> </a>
+            <hr />
             <ul>
 
+                <li class="tb-nav-title"><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
@@ -26,8 +28,7 @@
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li class="tb-nav-title"><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
                 <li><a href="#">Link</a></li>
@@ -75,14 +76,21 @@
             </ul>
         </aside>
         <section class="page">
-            <div class="page-title-box">Top</div>
+            <div class="title-box text-center">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                    <div class="title-box-title">24 października - 28 października - Patryk Spadło (spadlo) - CFI
+                        Systemy
+                        Informatyczne sp. z o.o.</div>
+                    <div class="title-box-exit">×</div>
+                </div>
+            </div>
             <div class="tbs-ribbon">
                 <div class="tab-content">
                     <div class="tab-pane fade active show" id="tbs-ribbon-element-1"
                         aria-labelledby="tbs-ribbon-element-1-tab" role="tabpanel">
-                        <div class="fluid-container text-left">
-                            <div class="row mr-0">
-                                <div class="col-md-auto">
+                        <div class="container text-left">
+                                <div class="tb-ribbon-group">
                                     <div class="elements text-center">
                                         <div class="one-element large-element"><a tabindex="-1"
                                                 href="javascript:void(0)"><i class="material-icons md-36">
@@ -99,7 +107,7 @@
                                     </div>
                                     <div class="section-label text-center">Example</div>
                                 </div>
-                                <div class="col-md-auto">
+                                <div class="tb-ribbon-group">
                                     <div class="elements text-center">
                                         <div class="one-element large-element"><a tabindex="-1"
                                                 href="javascript:void(0)"><i class="material-icons md-36">
@@ -110,7 +118,7 @@
                                     </div>
                                     <div class="section-label text-center">Playground</div>
                                 </div>
-                                <div class="col-md-auto">
+                                <div class="tb-ribbon-group">
                                     <div class="elements text-center">
                                         <div class="one-element large-element"><a tabindex="-1"
                                                 href="javascript:void(0)"><i class="material-icons md-36">
@@ -121,386 +129,25 @@
                                     </div>
                                     <div class="section-label text-center">Other</div>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="content">
-                <div class="card-tabs scroll h-40">
-                    <div class="tbs-pc-h">
-                        <ul class="tbs-pc-nv nav nav-tabs">
-                            <li class="tbs-pc-nv-it nav-item" page-id="3"><a class="nav-link active top-active">Dane</a>
-                            </li>
-                            <li class="tbs-pc-nv-it nav-item" page-id="4"><a class="nav-link">Ludzie</a></li>
-                            <li class="tbs-pc-nv-it nav-item" page-id="5"><a class="nav-link">Dokumenty</a></li>
-                            <li class="tbs-pc-nv-it nav-item" page-id="6"><a class="nav-link">Zdarzenia</a></li>
-                        </ul>
-                    </div>
-                    <div class="tbs-pc-c card-body">
-                        <div class="row">
-                            <div class="col-12"><!--!--></div>
-                            <div class="col-12"><!--!-->
-                                <div class="card">
-                                    <div class="card-header">Dane podstawowe</div>
-                                    <div class="card-body"><!--!-->
-                                        <div class="row">
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Kod</label>
-                                                    <!--!--><input type="text" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_Code"
-                                                                   name="Code" maxlength="32767"></div>
-                                            </div>
-                                            <div class="col-12"><!--!-->
-                                                <div class="row">
-                                                    <div class="col-12"><!--!-->
-                                                        <div class="form-group"><!--!--><label style="max-height: 150px">Nazwa</label>
-                                                            <!--!--><textarea class="form-control"
-                                                                              id="AvailablePages.General.View.Identity_ClientAsCompanyIdentityViewModel_Name"
-                                                                              name="Name" rows="3" max-rows="12"
-                                                                              maxlength="32767" _bl_11=""
-                                                                              style="height: 76px;"></textarea></div>
-                                                    </div>
-                                                    <div class="col-12"><!--!-->
-                                                        <div class="row"
-                                                             id="AvailablePages.General.View.Identity_ClientAsCompanyIdentityViewModel_Sections"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12"><!--!-->
-                                <div class="card">
-                                    <div class="card-header">Kontakt<!--!-->
-                                        <div class="d-inline"><!--!-->
-                                            <button class="btn" disabled="" type="button" data-toggle="tooltip"
-                                                    title="Wyślij E-mail"><i class="fal"><!--!--></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="card-body"><!--!-->
-                                        <div class="row">
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px"><a
-                                                        href="javascript:void(0)" tabindex="-1">Telefon</a></label>
-                                                    <!--!--><input type="tel" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_PhoneNumber"
-                                                                   name="PhoneNumber" readonly="" tabindex="-1"
-                                                                   maxlength="32767"></div>
-                                            </div>
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px"><a
-                                                        href="javascript:void(0)" tabindex="-1">Adres e-mail</a></label>
-                                                    <!--!--><input type="text" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_EmailAddress"
-                                                                   name="EmailAddress" readonly="" tabindex="-1"
-                                                                   maxlength="32767"></div>
-                                            </div>
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px"><a
-                                                        href="javascript:void(0)" tabindex="-1">Strona
-                                                    internetowa</a></label><!--!--><input type="text" class="form-control"
-                                                                                          id="AvailablePages.General.View_ClientGeneralVM_WebsiteAddress"
-                                                                                          name="WebsiteAddress"
-                                                                                          maxlength="32767"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12"><!--!-->
-                                <div class="card">
-                                    <div class="card-header">Adres<!--!-->
-                                        <div class="d-inline"><!--!-->
-                                            <button class="btn" type="button" data-toggle="tooltip"
-                                                    title="Get Gps Localization"><i class="fal"><!--!--></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="card-body"><!--!-->
-                                        <div class="row">
-                                            <div class="col-lg-8"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Ulica</label><!--!--><input type="text"
-                                                                                                              class="form-control"
-                                                                                                              id="AvailablePages.General.View_ClientGeneralVM_Street"
-                                                                                                              name="Street"
-                                                                                                              maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Nr
-                                                    domu</label><!--!--><input type="text" class="form-control"
-                                                                               id="AvailablePages.General.View_ClientGeneralVM_BuildingNumber"
-                                                                               name="BuildingNumber" maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Nr
-                                                    lokalu</label><!--!--><input type="text" class="form-control"
-                                                                                 id="AvailablePages.General.View_ClientGeneralVM_ApartmentNumber"
-                                                                                 name="ApartmentNumber" maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="w-100"></div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Kod
-                                                    pocztowy</label><!--!--><input type="text" class="form-control"
-                                                                                   id="AvailablePages.General.View_ClientGeneralVM_ZipOrPostalCode"
-                                                                                   name="ZipOrPostalCode" maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Miasto</label><!--!--><input type="text"
-                                                                                                               class="form-control"
-                                                                                                               id="AvailablePages.General.View_ClientGeneralVM_City"
-                                                                                                               name="City"
-                                                                                                               maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Region</label><!--!-->
-                                                    <div class="input-group"><input type="text" class="form-control"
-                                                                                    id="AvailablePages.General.View_ClientGeneralVM_StateOrProvinceId"
-                                                                                    hotkeys="enter,ctrl space,ctrl delete"
-                                                                                    autocomplete="off">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">x
-                                                            </button>
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">...
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Kraj</label><!--!-->
-                                                    <div class="input-group"><input type="text" class="form-control"
-                                                                                    id="AvailablePages.General.View_ClientGeneralVM_CountryId"
-                                                                                    hotkeys="enter,ctrl space,ctrl delete"
-                                                                                    autocomplete="off">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">x
-                                                            </button>
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">...
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="w-100"></div>
-                                            <div class="col-lg-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Nip</label>
-                                                    <!--!--><input type="text" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_Nip"
-                                                                   name="Nip" maxlength="32767"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
-                </div>
-                <div class="card-tabs scroll h-60">
-                    <div class="tbs-pc-h">
-                        <ul class="tbs-pc-nv nav nav-tabs">
-                            <li class="tbs-pc-nv-it nav-item" page-id="3"><a class="nav-link active top-active">Dane</a>
-                            </li>
-                            <li class="tbs-pc-nv-it nav-item" page-id="4"><a class="nav-link">Ludzie</a></li>
-                            <li class="tbs-pc-nv-it nav-item" page-id="5"><a class="nav-link">Dokumenty</a></li>
-                            <li class="tbs-pc-nv-it nav-item" page-id="6"><a class="nav-link">Zdarzenia</a></li>
-                        </ul>
-                    </div>
-                    <div class="tbs-pc-c card-body">
-                        <div class="row">
-                            <div class="col-12"><!--!--></div>
-                            <div class="col-12"><!--!-->
-                                <div class="card">
-                                    <div class="card-header">Dane podstawowe</div>
-                                    <div class="card-body"><!--!-->
-                                        <div class="row">
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Kod</label>
-                                                    <!--!--><input type="text" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_Code"
-                                                                   name="Code" maxlength="32767"></div>
-                                            </div>
-                                            <div class="col-12"><!--!-->
-                                                <div class="row">
-                                                    <div class="col-12"><!--!-->
-                                                        <div class="form-group"><!--!--><label style="max-height: 150px">Nazwa</label>
-                                                            <!--!--><textarea class="form-control"
-                                                                              id="AvailablePages.General.View.Identity_ClientAsCompanyIdentityViewModel_Name"
-                                                                              name="Name" rows="3" max-rows="12"
-                                                                              maxlength="32767" _bl_11=""
-                                                                              style="height: 76px;"></textarea></div>
-                                                    </div>
-                                                    <div class="col-12"><!--!-->
-                                                        <div class="row"
-                                                             id="AvailablePages.General.View.Identity_ClientAsCompanyIdentityViewModel_Sections"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12"><!--!-->
-                                <div class="card">
-                                    <div class="card-header">Kontakt<!--!-->
-                                        <div class="d-inline"><!--!-->
-                                            <button class="btn" disabled="" type="button" data-toggle="tooltip"
-                                                    title="Wyślij E-mail"><i class="fal"><!--!--></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="card-body"><!--!-->
-                                        <div class="row">
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px"><a
-                                                        href="javascript:void(0)" tabindex="-1">Telefon</a></label>
-                                                    <!--!--><input type="tel" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_PhoneNumber"
-                                                                   name="PhoneNumber" readonly="" tabindex="-1"
-                                                                   maxlength="32767"></div>
-                                            </div>
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px"><a
-                                                        href="javascript:void(0)" tabindex="-1">Adres e-mail</a></label>
-                                                    <!--!--><input type="text" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_EmailAddress"
-                                                                   name="EmailAddress" readonly="" tabindex="-1"
-                                                                   maxlength="32767"></div>
-                                            </div>
-                                            <div class="col-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px"><a
-                                                        href="javascript:void(0)" tabindex="-1">Strona
-                                                    internetowa</a></label><!--!--><input type="text" class="form-control"
-                                                                                          id="AvailablePages.General.View_ClientGeneralVM_WebsiteAddress"
-                                                                                          name="WebsiteAddress"
-                                                                                          maxlength="32767"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12"><!--!-->
-                                <div class="card">
-                                    <div class="card-header">Adres<!--!-->
-                                        <div class="d-inline"><!--!-->
-                                            <button class="btn" type="button" data-toggle="tooltip"
-                                                    title="Get Gps Localization"><i class="fal"><!--!--></i></button>
-                                        </div>
-                                    </div>
-                                    <div class="card-body"><!--!-->
-                                        <div class="row">
-                                            <div class="col-lg-8"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Ulica</label><!--!--><input type="text"
-                                                                                                              class="form-control"
-                                                                                                              id="AvailablePages.General.View_ClientGeneralVM_Street"
-                                                                                                              name="Street"
-                                                                                                              maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Nr
-                                                    domu</label><!--!--><input type="text" class="form-control"
-                                                                               id="AvailablePages.General.View_ClientGeneralVM_BuildingNumber"
-                                                                               name="BuildingNumber" maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Nr
-                                                    lokalu</label><!--!--><input type="text" class="form-control"
-                                                                                 id="AvailablePages.General.View_ClientGeneralVM_ApartmentNumber"
-                                                                                 name="ApartmentNumber" maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="w-100"></div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Kod
-                                                    pocztowy</label><!--!--><input type="text" class="form-control"
-                                                                                   id="AvailablePages.General.View_ClientGeneralVM_ZipOrPostalCode"
-                                                                                   name="ZipOrPostalCode" maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Miasto</label><!--!--><input type="text"
-                                                                                                               class="form-control"
-                                                                                                               id="AvailablePages.General.View_ClientGeneralVM_City"
-                                                                                                               name="City"
-                                                                                                               maxlength="32767">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Region</label><!--!-->
-                                                    <div class="input-group"><input type="text" class="form-control"
-                                                                                    id="AvailablePages.General.View_ClientGeneralVM_StateOrProvinceId"
-                                                                                    hotkeys="enter,ctrl space,ctrl delete"
-                                                                                    autocomplete="off">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">x
-                                                            </button>
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">...
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-2"><!--!-->
-                                                <div class="form-group"><!--!--><label
-                                                        style="max-height: 150px">Kraj</label><!--!-->
-                                                    <div class="input-group"><input type="text" class="form-control"
-                                                                                    id="AvailablePages.General.View_ClientGeneralVM_CountryId"
-                                                                                    hotkeys="enter,ctrl space,ctrl delete"
-                                                                                    autocomplete="off">
-                                                        <div class="input-group-append">
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">x
-                                                            </button>
-                                                            <button class="btn btn-outline-secondary" type="button"
-                                                                    tabindex="-1">...
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="w-100"></div>
-                                            <div class="col-lg-12"><!--!-->
-                                                <div class="form-group"><!--!--><label style="max-height: 150px">Nip</label>
-                                                    <!--!--><input type="text" class="form-control"
-                                                                   id="AvailablePages.General.View_ClientGeneralVM_Nip"
-                                                                   name="Nip" maxlength="32767"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-                    </div>
+                <div class="container">
+
                 </div>
             </div>
-            
+
             <footer>Stopka</footer>
         </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../src/js/orion/scripts.js"></script>
 </body>
 
 </html>

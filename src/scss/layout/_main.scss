@@ -1,0 +1,28 @@
+body{
+    background: #dfdfdf;
+}
+* {
+    user-select: none;
+}
+a{
+    text-decoration: none;
+}
+label,textarea{
+    user-select: text;
+}
+
+.wrapper,.wrapper-box{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+.wrapper{
+    margin:0 auto;
+    max-width: var(--base-site-max-width);
+    -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+}

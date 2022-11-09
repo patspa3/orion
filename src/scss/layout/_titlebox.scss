@@ -1,0 +1,55 @@
+.title-box {
+    padding: 8px 0px;
+    flex: 0 1 40px;
+    background: #FAFAFA;
+    min-height: 40px;
+    border-bottom: 1px solid var(--base-border-color);
+    
+    .navbar-toggler {
+        float: left;
+        position: relative;
+        display: inline-block;
+        border: none;
+        background-color: inherit;
+
+        .navbar-toggler-icon {
+            height: 2px;
+            width: 1.25em;
+            background: currentColor;
+            border-radius: 10px;
+            transition: 0.2s 0.2s top, 0.2s 0.2s bottom, 0.2s transform, 0s 0.2s opacity;
+            position: relative;
+
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                height: inherit;
+                width: inherit;
+                border-radius: inherit;
+                background: inherit;
+                position: absolute;
+                left: 0;
+                transition: inherit;
+            }
+            &:before {
+                top: -0.45em;
+            }
+            &:after {
+                bottom: -0.45em !important;
+            }
+        }
+    }
+    .title-box-title{
+        width: calc(100% - 120px);
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color:#6c757d;
+    }
+    .title-box-exit{
+        float:right;
+        cursor: pointer;
+    }
+}
