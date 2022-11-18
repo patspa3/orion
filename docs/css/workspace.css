@@ -1,0 +1,86 @@
+/* Workspace */
+.tbs-ws {
+  position: relative;
+  height: 100%;
+}
+
+.tbs-ws .dragging {
+  box-shadow: none !important;
+  z-index: 1002;
+  background-color: #e1e1e1;
+}
+
+.tbs-ws-bs {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.tbs-ws-gr {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.tbs-ws-gr-v {
+  flex-direction: column;
+}
+
+.tbs-ws-gr-h {
+  flex-direction: row;
+}
+
+.tbs-ws-sp {
+  padding: 0;
+  z-index: 100;
+}
+
+.tbs-ws-sp-v {
+  height: 10px;
+  width: 100%;
+  cursor: ns-resize;
+}
+
+.tbs-ws-sp-h {
+  height: 100%;
+  width: 10px;
+  margin: 0;
+  cursor: ew-resize;
+}
+
+.tbs-ws .tbs-pc {
+  display: flex;
+  flex-direction: column;
+}
+
+.tbs-pc-h {
+  flex: 1 0 auto;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.tbs-pc-h::-webkit-scrollbar {
+  display: none;
+}
+
+.tbs-pc-c {
+  z-index: 1;
+}
+
+.tbs-ws .tbs-pc .tbs-pc-c {
+  flex: 1 1 auto;
+}
+
+.tbs-pc-nv {
+  width: max-content;
+}
+
+.tbs-pc-nv-it .top-active {
+  font-weight: bold;
+}
+
+.tbs-pc-nv-it {
+  margin-bottom: 0px !important;
+}

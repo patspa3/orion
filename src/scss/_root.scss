@@ -1,0 +1,58 @@
+:root{
+--dev-page-height:100%;
+
+--base-border-color: #dedede;
+--base-site-max-width: 1400px;
+--base-background-color: #f8f8f8;
+--base-font: OpenSans;//TODO
+--base-font-size: 12px;
+
+--modal-radius: 0px; //Max 30px
+--modal-header-background-color: #354052;
+--modal-header-font-size: 12px;
+--modal-header-font-color: white;
+--modal-body-background-color: rgb(2, 236, 217);
+--modal-footer-background-color: blue;
+--modal-width: 750px; //Min 600px
+
+--nav-width: 250px;
+--nav-mobile-width: 300px;
+--nav-background-color: #354052;
+--nav-item-color: #e7e7e7;
+--nav-item-color-hover: #eeeeee;
+--nav-item-padding: 2px 2px 2px 12px;
+--nav-font-size: 15px;
+
+--content-background-color: var(--base-background-color);
+
+--ribbon-link-color: #4b5056;
+
+--tabs-nav-background-color: #f3f4f4;
+--tabs-nav-link-color: #555;
+--tabs-nav-acive-background-color: #fff;
+--tabs-nav-link-active-color: #313131;
+--tabs-nav-padding: 12px 16px;
+--tabs-font-size: 13px;
+--tabs-body-background: var(--base-background-color);
+
+--table-border-color: var(--base-border-color);
+--table-font-size:12px;
+--table-font-color: green;/* Przemyslec */
+--table-link-color: yellow;
+--table-background-color: rgb(243, 243, 243);
+--table-header-font-size:14px;
+--table-header-font-color: red;
+--table-header-background-color: rgb(216, 216, 216);
+
+--footer-background: #ebebeb;
+--footer-border-color: var(--base-border-color);
+
+--scheduler-background: white;
+
+--button-border-radius:4px;
+}
+
+.card {
+    --bs-card-border-radius: 5px;
+    --bs-card-inner-border-radius: 5px;
+}

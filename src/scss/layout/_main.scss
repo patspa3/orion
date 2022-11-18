@@ -1,6 +1,13 @@
+html{
+    height: 100vh;
+    height :var(--dev-page-height); 
+}
 body{
     background: #dfdfdf;
+    height: 100vh;
+    height :var(--dev-page-height); 
 }
+
 * {
     user-select: none;
 }
@@ -11,13 +18,19 @@ label,textarea{
     user-select: text;
 }
 
-.wrapper,.wrapper-box{
+.tb-no-border{
+    border: none !important;
+}
+
+.wrapper,.wrapper-fluid{
     width:100vw;
     height:100vh;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     padding: 0px;
+    background-color: var(--wrapper-background-color);
+    height :var(--dev-page-height); 
 }
 .wrapper{
     margin:0 auto;

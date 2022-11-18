@@ -1,21 +1,26 @@
 .navbar {
     height:100vh;
-    min-width: 15rem;
+    min-width: var(--nav-width);
     flex-direction: row;
     align-content: flex-start;
     flex:0;
     background-color: var(--nav-background-color);
     overflow-y: auto;
+    z-index: 1002;
+    font-size: var(--nav-font-size);
     .navbar-brand{
         padding: 12px;
         margin: 0 auto;
     }
     ul {
-        padding: 0px 12px;
+        padding: 0px 12px 0px 24px;
         width:100%;
         li {
             list-style: none;
-            padding: 1px 2px 1px 12px;
+            padding: var(--nav-item-padding);
+            i{
+                padding-right: 6px;
+            }
             a{
                 color: var(--nav-item-color);
                 &:hover {
@@ -44,6 +49,7 @@
         display: none;
         position: absolute;
         margin-top:39px;
-        height: calc(100vh - 39px);
+        height: calc(var(--dev-page-height) - 39px);
+        width: var(--nav-mobile-width);
     }
 }

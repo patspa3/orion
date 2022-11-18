@@ -1,7 +1,7 @@
 /* SCROLL START */
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 5px;
+    width: 8px;
+    height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -14,5 +14,9 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
+}
+/* aside scroll fix*/
+aside::-webkit-scrollbar-track {
+    background: var(--nav-background-color);
 }
 /* SCROLL END */

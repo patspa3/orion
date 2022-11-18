@@ -1,0 +1,242 @@
+/* scheduler */
+.tbs-scheduler {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 100%;
+  background-color: var(--scheduler-background);
+}
+.tbs-scheduler table {
+  width: 100%;
+  margin: 0;
+  background-color: var(--scheduler-background);
+  border-color: var(--table-border-color) !important;
+  table-layout: fixed !important;
+}
+.tbs-scheduler table tbody {
+  border: 1px solid var(--table-border-color);
+}
+.tbs-scheduler tr {
+  height: 11px;
+  background-color: var(--scheduler-background);
+}
+.tbs-scheduler td {
+  border: 1px #dadce0 solid;
+  font-size: 12px;
+  background-color: var(--scheduler-background);
+}
+.tbs-scheduler td, .tbs-scheduler th {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.dragging {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.65) !important;
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65) !important;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.65) !important;
+}
+
+.tbs-scheduler-interval {
+  border-style: dashed;
+}
+
+.tbs-scheduler-view {
+  overflow-y: scroll;
+  max-height: 100%;
+}
+
+.tbs-scheduler-navigation {
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.tbs-scheduler-navigation button {
+  margin: 0px 4px;
+}
+
+.tbs-scheduler-navigation button:first-child {
+  margin: 0px 6px 0px 0px;
+}
+
+.tbs-scheduler-navigation button:last-child {
+  margin: 0px 0px 0px 6px;
+}
+
+.tbs-scheduler-header {
+  position: sticky;
+  top: 0;
+  background-color: whitesmoke;
+  z-index: 1000;
+}
+
+.tbs-scheduler-header tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tbs-scheduler-allday {
+  border-bottom: 1px solid #dedede;
+  max-height: 153px;
+  overflow: scroll;
+}
+
+.tbs-scheduler-allday::-webkit-scrollbar {
+  display: none;
+}
+
+.tbs-scheduler-allday-timeline table tbody tr td:first-child {
+  border-top: 0px !important;
+}
+
+.tbs-scheduler-header-days-timeline td > span:first-child {
+  padding-top: 4px;
+}
+
+.tbs-scheduler-header-days-timeline td > span:last-child {
+  padding-bottom: 4px;
+}
+
+.tbs-scheduler-header-days-timeline td > span:last-child:before {
+  content: "";
+  margin-top: -5px;
+  display: block;
+}
+
+.tbs-scheduler-currentdate {
+  color: var(--bs-info);
+  font-weight: bold;
+}
+
+.tbs-scheduler-header td,
+.tbs-scheduler-header tbody {
+  border-bottom: 0px !important;
+}
+
+.tbs-scheduler-allday-timeline td:first-child,
+.tbs-scheduler-header-days-timeline td:first-child {
+  width: 55px;
+}
+
+.tbs-scheduler-content-hours td:first-child {
+  width: 55px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.tbs-scheduler-view {
+  border-bottom: 1px solid #dedede;
+}
+
+.tbs-scheduler-content-hours > table > tbody:last-child {
+  border-bottom: 0px !important;
+}
+
+.tbs-scheduler-content-hours > table > tbody > tr > td {
+  border-top: none;
+  border-bottom: none;
+}
+
+.tbs-scheduler-content-days td {
+  vertical-align: top;
+  padding: 5px;
+  line-height: 1;
+}
+
+.tbs-scheduler-content-days tr {
+  height: 12.5vh;
+}
+
+.tbs-scheduler-allday,
+.tbs-scheduler-content {
+  position: relative;
+}
+
+.tbs-scheduler-task-container div {
+  position: absolute;
+  /*border: 1px #3c9fe5 solid;*/
+  background-color: var(--bs-info);
+  border-radius: 3px;
+  overflow: hidden;
+  visibility: hidden;
+  padding: 3px 6px;
+  line-height: normal;
+  font-size: 13px;
+  color: white;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+}
+.tbs-scheduler-task-container div h5 {
+  font-size: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.tbs-scheduler-task-container div > * {
+  pointer-events: none;
+}
+
+.tbs-scheduler-task-container div > * {
+  pointer-events: none;
+}
+
+.tbs-scheduler-task-container div p {
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+
+.tbs-scheduler-loading {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #206bc4;
+  border: 1px solid #206bc4;
+  opacity: 0;
+  border-radius: 5px;
+  animation: fadeIn 0.5s;
+  animation-delay: 0.2s;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  animation-fill-mode: forwards;
+}
+
+.tbs-scheduler-loading::before {
+  content: "";
+  border: 4px solid rgb(255, 255, 255);
+  border-top: 4px solid var(--bs-info);
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -5px;
+  margin-right: 5px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 767.98px) {
+  .tbs-scheduler table {
+    margin-top: 0px !important;
+  }
+}

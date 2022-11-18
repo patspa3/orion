@@ -1,0 +1,20 @@
+.tb-table {
+    @extend .table;
+    font-size: 13px;
+    background-color: #fff;
+    .tbs-table-group {
+        font-weight: bold;
+    }
+}
+.tb-table-bordered {
+    @extend .table-bordered;
+}
+.tb-card-body {
+    > .tb-table-container {
+        margin: -12px;
+        border: none;
+        > .tb-table {
+            margin-bottom: 0px;
+        }
+    }
+}

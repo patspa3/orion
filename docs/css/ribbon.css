@@ -8,6 +8,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  flex: 0 1 auto;
 }
 .tbs-ribbon:empty {
   display: none;
@@ -62,6 +63,7 @@
 }
 .tbs-ribbon i {
   font-size: 32px;
+  line-height: 48px !important;
 }
 .tbs-ribbon nav-link:hover {
   background-color: #efefef !important;

@@ -1,39 +1,14 @@
-.page{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-.tbs-ribbon{
-    flex: 0 1 auto;
-}
-.content{
-    background: #fff;
-    flex:1 1 auto;
-    overflow-y: auto;
-    max-width: 100%;
-    overflow-x: hidden;
-    padding: 16px;
-}
-
-.scroll{
+.scroll {
     overflow-y: scroll;
     max-height: 100%;
     overflow-x: hidden;
 }
-.h-20{
+.h-20 {
     max-height: 20%;
 }
-.h-40{
+.h-40 {
     max-height: 40%;
-}.h-60{
+}
+.h-60 {
     max-height: 60%;
 }
-
-@media (max-width: 1023px) {
-    .navbar{
-        display: none;
-    }
-
-}
-

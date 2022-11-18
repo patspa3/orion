@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 @import "modules/bootstrap/bootstrap.scss";
 
 @import "layout/core";
@@ -6,6 +8,11 @@
 
 @import "ui/ribbon.scss";
 @import "ui/tabs";
+@import "ui/card";
+@import "ui/forms";
+@import "ui/table";
+@import "ui/scheduler.scss";
+@import "ui/modal";
+@import "ui/workspace.scss";
 
-
-@import "_variables.scss";
+@import "root";

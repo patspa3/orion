@@ -1,0 +1,11 @@
+.tb-card{
+    @extend .card;
+}
+
+
+.tb-card{
+    margin-bottom: 12px;
+    .card-header{
+        font-weight: bold;
+    }
+}

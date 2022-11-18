@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="en" translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scheduler</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="css/orion.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper-fluid container-fluid">
+        <!-- wrapper container - oznacza tryb box i umożliwia użycie zmiennej --base-site-max-width -->
+        <aside class="navbar show">
+            <a class="img-fluid navbar-brand" href="#"><img src="https://uidemo.tagbites.com/images/logo.png" /> </a>
+            <hr />
+            <ul>
+                <li class="tb-nav-title"><a href="#">Link</a></li>
+                <li><a href="index.html"><i style="color:rgb(14, 184, 71);" class="fa-solid fa-house"></i>Index</a></li>
+                <li><a href="liderraport.html"><i class="fa-solid fa-pen"></i>Raport Lidera</a></li>
+                <li><a href="modal.html"><i class="fa-solid fa-bomb"></i>Modal</a></li>
+                <li><a href="scheduler.html"><i class="fa-solid fa-filter"></i>Scheduler</a></li>
+                <li><a href="timespan.html"><i class="fa-solid fa-lock"></i>TimeSpan</a></li>
+                <li><a href="radio.html"><i class="fa-solid fa-bomb"></i>Radio</a></li>
+                <li><a href="forms.html"><i class="fa-solid fa-bomb"></i>Forms</a></li>
+                <li><a href="formsROM.html"><i class="fa-solid fa-bomb"></i>Forms read only mode</a></li>
+                <li><a href="#"><i class="fa-solid fa-pen"></i>Link</a></li>
+                <li><a href="#"><i style="color:rgb(28, 12, 170);" class="fa-solid fa-phone"></i></i>Link</a></li>
+                <li><a href="#"><i class="fa-solid fa-film"></i>Link</a></li>
+                <li><a href="blank.html"><i class="fa-solid fa-house"></i>Blank page</a></li>
+                <li class="tb-nav-title"><a href="#">Link</a></li>
+                <li><a href="#"><i class="fa-solid fa-music"></i>Link</a></li>
+                <li><a href="#"><i class="fa-solid fa-music"></i>
+                        <div>Link sd asd asd asd asd asd asdddsaasasd</div>
+                    </a></li>
+                <li><a href="#"><i class="fa-solid fa-music"></i>Link</a></li>
+                <li><a href="#"><i class="fa-solid fa-bomb"></i>Link</a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Link</a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i>Link</a></li>
+                <li><a href="#"><i class="fa-solid fa-music"></i>Link</a></li>
+            </ul>
+        </aside>
+        <section class="page">
+            <div class="title-box text-center">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                    <div class="title-box-title">Scheduler Page</div>
+                    <div class="title-box-exit"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button></div>
+                </div>
+            </div>
+            <div class="tbs-ribbon">
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="tbs-ribbon-element-1"
+                        aria-labelledby="tbs-ribbon-element-1-tab" role="tabpanel">
+                        <div class="container text-left">
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-film"></i>
+                                            <div>Show In New Window</div>
+                                        </a></div>
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-music"></i>
+                                            <div>View Code</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Example</div>
+                            </div>
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i class="fa-solid fa-image"></i>
+                                            <div>Show Designer</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Playground</div>
+                            </div>
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i style="color:rgb(14, 184, 71);" class="fa-solid fa-house"></i>
+                                            <div>About</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Other</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="tbs-scheduler" id="CurrentExample.Instance_SchedulerExample_Items" _bl_3="">
+                    <div class="tbs-scheduler-view">
+                        <div class="tbs-scheduler-header">
+                            <div class="tbs-scheduler-header-days-timeline">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td class="tbs-scheduler-currentdate"><span>Tue</span><span>15 Nov</span>
+                                            </td>
+                                            <td><span>Wed</span><span>16 Nov</span></td>
+                                            <td><span>Thu</span><span>17 Nov</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tbs-scheduler-allday">
+                                <!--!-->
+                                <div class="tbs-scheduler-allday-timeline" _bl_4="">
+                                    <table>
+                                        <tbody>
+                                            <tr style="height: 57px;">
+                                                <td></td>
+                                                <td start="1063401120" end="1063402560"></td>
+                                                <td start="1063402560" end="1063404000"></td>
+                                                <td start="1063404000" end="1063405440"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--!-->
+                                <div class="tbs-scheduler-task-container" _bl_7="">
+                                    <div style="background-color: rgb(111, 66, 193); left: 58px; top: 3px; width: 552px; height: 24px; visibility: visible;"
+                                        index="1" start="1063401120" end="1063403232" title="Task 10
+                    10:08 PM - 11:12 AM
+                    
+                    Text text text text text text text
+                    
+                    
+                    text text text text text text text text text text text text." before-start="">
+                                        <h5>Task 10</h5>
+                                        <p>Text text text text text text text<br><br><br>text text text text text text
+                                            text text text text text text.</p>
+                                    </div>
+                                    <div style="background-color: rgb(32, 201, 151); left: 337px; top: 30px; width: 552px; height: 24px; visibility: visible;"
+                                        index="4" start="1063403828" end="1063404010" title="Task 20
+                    9:08 PM - 12:10 AM
+                    
+                    Text text text text text text text
+                    
+                    
+                    text text text text text text text text text text text text.">
+                                        <h5>Task 20</h5>
+                                        <p>Text text text text text text text<br><br><br>text text text text text text
+                                            text text text text text text.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbs-scheduler-content">
+                            <!--!-->
+                            <div class="tbs-scheduler-content-hours" _bl_5="">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">12:00 AM</td>
+                                            <td start="1063401120" end="1063401135"></td>
+                                            <td start="1063402560" end="1063402575"></td>
+                                            <td start="1063404000" end="1063404015"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401135" end="1063401150"></td>
+                                            <td start="1063402575" end="1063402590"></td>
+                                            <td start="1063404015" end="1063404030"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401150" end="1063401165"></td>
+                                            <td start="1063402590" end="1063402605"></td>
+                                            <td start="1063404030" end="1063404045"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401165" end="1063401180"></td>
+                                            <td start="1063402605" end="1063402620"></td>
+                                            <td start="1063404045" end="1063404060"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">1:00 AM</td>
+                                            <td start="1063401180" end="1063401195"></td>
+                                            <td start="1063402620" end="1063402635"></td>
+                                            <td start="1063404060" end="1063404075"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401195" end="1063401210"></td>
+                                            <td start="1063402635" end="1063402650"></td>
+                                            <td start="1063404075" end="1063404090"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401210" end="1063401225"></td>
+                                            <td start="1063402650" end="1063402665"></td>
+                                            <td start="1063404090" end="1063404105"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401225" end="1063401240"></td>
+                                            <td start="1063402665" end="1063402680"></td>
+                                            <td start="1063404105" end="1063404120"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">2:00 AM</td>
+                                            <td start="1063401240" end="1063401255"></td>
+                                            <td start="1063402680" end="1063402695"></td>
+                                            <td start="1063404120" end="1063404135"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401255" end="1063401270"></td>
+                                            <td start="1063402695" end="1063402710"></td>
+                                            <td start="1063404135" end="1063404150"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401270" end="1063401285"></td>
+                                            <td start="1063402710" end="1063402725"></td>
+                                            <td start="1063404150" end="1063404165"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401285" end="1063401300"></td>
+                                            <td start="1063402725" end="1063402740"></td>
+                                            <td start="1063404165" end="1063404180"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">3:00 AM</td>
+                                            <td start="1063401300" end="1063401315"></td>
+                                            <td start="1063402740" end="1063402755"></td>
+                                            <td start="1063404180" end="1063404195"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401315" end="1063401330"></td>
+                                            <td start="1063402755" end="1063402770"></td>
+                                            <td start="1063404195" end="1063404210"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401330" end="1063401345"></td>
+                                            <td start="1063402770" end="1063402785"></td>
+                                            <td start="1063404210" end="1063404225"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401345" end="1063401360"></td>
+                                            <td start="1063402785" end="1063402800"></td>
+                                            <td start="1063404225" end="1063404240"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">4:00 AM</td>
+                                            <td start="1063401360" end="1063401375"></td>
+                                            <td start="1063402800" end="1063402815"></td>
+                                            <td start="1063404240" end="1063404255"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401375" end="1063401390"></td>
+                                            <td start="1063402815" end="1063402830"></td>
+                                            <td start="1063404255" end="1063404270"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401390" end="1063401405"></td>
+                                            <td start="1063402830" end="1063402845"></td>
+                                            <td start="1063404270" end="1063404285"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401405" end="1063401420"></td>
+                                            <td start="1063402845" end="1063402860"></td>
+                                            <td start="1063404285" end="1063404300"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">5:00 AM</td>
+                                            <td start="1063401420" end="1063401435"></td>
+                                            <td start="1063402860" end="1063402875"></td>
+                                            <td start="1063404300" end="1063404315"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401435" end="1063401450"></td>
+                                            <td start="1063402875" end="1063402890"></td>
+                                            <td start="1063404315" end="1063404330"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401450" end="1063401465"></td>
+                                            <td start="1063402890" end="1063402905"></td>
+                                            <td start="1063404330" end="1063404345"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401465" end="1063401480"></td>
+                                            <td start="1063402905" end="1063402920"></td>
+                                            <td start="1063404345" end="1063404360"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">6:00 AM</td>
+                                            <td start="1063401480" end="1063401495"></td>
+                                            <td start="1063402920" end="1063402935"></td>
+                                            <td start="1063404360" end="1063404375"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401495" end="1063401510"></td>
+                                            <td start="1063402935" end="1063402950"></td>
+                                            <td start="1063404375" end="1063404390"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401510" end="1063401525"></td>
+                                            <td start="1063402950" end="1063402965"></td>
+                                            <td start="1063404390" end="1063404405"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401525" end="1063401540"></td>
+                                            <td start="1063402965" end="1063402980"></td>
+                                            <td start="1063404405" end="1063404420"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">7:00 AM</td>
+                                            <td start="1063401540" end="1063401555"></td>
+                                            <td start="1063402980" end="1063402995"></td>
+                                            <td start="1063404420" end="1063404435"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401555" end="1063401570"></td>
+                                            <td start="1063402995" end="1063403010"></td>
+                                            <td start="1063404435" end="1063404450"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401570" end="1063401585"></td>
+                                            <td start="1063403010" end="1063403025"></td>
+                                            <td start="1063404450" end="1063404465"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401585" end="1063401600"></td>
+                                            <td start="1063403025" end="1063403040"></td>
+                                            <td start="1063404465" end="1063404480"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">8:00 AM</td>
+                                            <td start="1063401600" end="1063401615"></td>
+                                            <td start="1063403040" end="1063403055"></td>
+                                            <td start="1063404480" end="1063404495"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401615" end="1063401630"></td>
+                                            <td start="1063403055" end="1063403070"></td>
+                                            <td start="1063404495" end="1063404510"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401630" end="1063401645"></td>
+                                            <td start="1063403070" end="1063403085"></td>
+                                            <td start="1063404510" end="1063404525"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401645" end="1063401660"></td>
+                                            <td start="1063403085" end="1063403100"></td>
+                                            <td start="1063404525" end="1063404540"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">9:00 AM</td>
+                                            <td start="1063401660" end="1063401675"></td>
+                                            <td start="1063403100" end="1063403115"></td>
+                                            <td start="1063404540" end="1063404555"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401675" end="1063401690"></td>
+                                            <td start="1063403115" end="1063403130"></td>
+                                            <td start="1063404555" end="1063404570"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401690" end="1063401705"></td>
+                                            <td start="1063403130" end="1063403145"></td>
+                                            <td start="1063404570" end="1063404585"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401705" end="1063401720"></td>
+                                            <td start="1063403145" end="1063403160"></td>
+                                            <td start="1063404585" end="1063404600"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">10:00 AM</td>
+                                            <td start="1063401720" end="1063401735"></td>
+                                            <td start="1063403160" end="1063403175"></td>
+                                            <td start="1063404600" end="1063404615"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401735" end="1063401750"></td>
+                                            <td start="1063403175" end="1063403190"></td>
+                                            <td start="1063404615" end="1063404630"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401750" end="1063401765"></td>
+                                            <td start="1063403190" end="1063403205"></td>
+                                            <td start="1063404630" end="1063404645"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401765" end="1063401780"></td>
+                                            <td start="1063403205" end="1063403220"></td>
+                                            <td start="1063404645" end="1063404660"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">11:00 AM</td>
+                                            <td start="1063401780" end="1063401795"></td>
+                                            <td start="1063403220" end="1063403235"></td>
+                                            <td start="1063404660" end="1063404675"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401795" end="1063401810"></td>
+                                            <td start="1063403235" end="1063403250"></td>
+                                            <td start="1063404675" end="1063404690"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401810" end="1063401825"></td>
+                                            <td start="1063403250" end="1063403265"></td>
+                                            <td start="1063404690" end="1063404705"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401825" end="1063401840"></td>
+                                            <td start="1063403265" end="1063403280"></td>
+                                            <td start="1063404705" end="1063404720"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">12:00 PM</td>
+                                            <td start="1063401840" end="1063401855"></td>
+                                            <td start="1063403280" end="1063403295"></td>
+                                            <td start="1063404720" end="1063404735"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401855" end="1063401870"></td>
+                                            <td start="1063403295" end="1063403310"></td>
+                                            <td start="1063404735" end="1063404750"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401870" end="1063401885"></td>
+                                            <td start="1063403310" end="1063403325"></td>
+                                            <td start="1063404750" end="1063404765"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401885" end="1063401900"></td>
+                                            <td start="1063403325" end="1063403340"></td>
+                                            <td start="1063404765" end="1063404780"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">1:00 PM</td>
+                                            <td start="1063401900" end="1063401915"></td>
+                                            <td start="1063403340" end="1063403355"></td>
+                                            <td start="1063404780" end="1063404795"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401915" end="1063401930"></td>
+                                            <td start="1063403355" end="1063403370"></td>
+                                            <td start="1063404795" end="1063404810"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401930" end="1063401945"></td>
+                                            <td start="1063403370" end="1063403385"></td>
+                                            <td start="1063404810" end="1063404825"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401945" end="1063401960"></td>
+                                            <td start="1063403385" end="1063403400"></td>
+                                            <td start="1063404825" end="1063404840"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">2:00 PM</td>
+                                            <td start="1063401960" end="1063401975"></td>
+                                            <td start="1063403400" end="1063403415"></td>
+                                            <td start="1063404840" end="1063404855"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401975" end="1063401990"></td>
+                                            <td start="1063403415" end="1063403430"></td>
+                                            <td start="1063404855" end="1063404870"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063401990" end="1063402005"></td>
+                                            <td start="1063403430" end="1063403445"></td>
+                                            <td start="1063404870" end="1063404885"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402005" end="1063402020"></td>
+                                            <td start="1063403445" end="1063403460"></td>
+                                            <td start="1063404885" end="1063404900"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">3:00 PM</td>
+                                            <td start="1063402020" end="1063402035"></td>
+                                            <td start="1063403460" end="1063403475"></td>
+                                            <td start="1063404900" end="1063404915"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402035" end="1063402050"></td>
+                                            <td start="1063403475" end="1063403490"></td>
+                                            <td start="1063404915" end="1063404930"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402050" end="1063402065"></td>
+                                            <td start="1063403490" end="1063403505"></td>
+                                            <td start="1063404930" end="1063404945"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402065" end="1063402080"></td>
+                                            <td start="1063403505" end="1063403520"></td>
+                                            <td start="1063404945" end="1063404960"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">4:00 PM</td>
+                                            <td start="1063402080" end="1063402095"></td>
+                                            <td start="1063403520" end="1063403535"></td>
+                                            <td start="1063404960" end="1063404975"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402095" end="1063402110"></td>
+                                            <td start="1063403535" end="1063403550"></td>
+                                            <td start="1063404975" end="1063404990"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402110" end="1063402125"></td>
+                                            <td start="1063403550" end="1063403565"></td>
+                                            <td start="1063404990" end="1063405005"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402125" end="1063402140"></td>
+                                            <td start="1063403565" end="1063403580"></td>
+                                            <td start="1063405005" end="1063405020"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">5:00 PM</td>
+                                            <td start="1063402140" end="1063402155"></td>
+                                            <td start="1063403580" end="1063403595"></td>
+                                            <td start="1063405020" end="1063405035"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402155" end="1063402170"></td>
+                                            <td start="1063403595" end="1063403610"></td>
+                                            <td start="1063405035" end="1063405050"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402170" end="1063402185"></td>
+                                            <td start="1063403610" end="1063403625"></td>
+                                            <td start="1063405050" end="1063405065"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402185" end="1063402200"></td>
+                                            <td start="1063403625" end="1063403640"></td>
+                                            <td start="1063405065" end="1063405080"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">6:00 PM</td>
+                                            <td start="1063402200" end="1063402215"></td>
+                                            <td start="1063403640" end="1063403655"></td>
+                                            <td start="1063405080" end="1063405095"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402215" end="1063402230"></td>
+                                            <td start="1063403655" end="1063403670"></td>
+                                            <td start="1063405095" end="1063405110"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402230" end="1063402245"></td>
+                                            <td start="1063403670" end="1063403685"></td>
+                                            <td start="1063405110" end="1063405125"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402245" end="1063402260"></td>
+                                            <td start="1063403685" end="1063403700"></td>
+                                            <td start="1063405125" end="1063405140"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">7:00 PM</td>
+                                            <td start="1063402260" end="1063402275"></td>
+                                            <td start="1063403700" end="1063403715"></td>
+                                            <td start="1063405140" end="1063405155"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402275" end="1063402290"></td>
+                                            <td start="1063403715" end="1063403730"></td>
+                                            <td start="1063405155" end="1063405170"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402290" end="1063402305"></td>
+                                            <td start="1063403730" end="1063403745"></td>
+                                            <td start="1063405170" end="1063405185"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402305" end="1063402320"></td>
+                                            <td start="1063403745" end="1063403760"></td>
+                                            <td start="1063405185" end="1063405200"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">8:00 PM</td>
+                                            <td start="1063402320" end="1063402335"></td>
+                                            <td start="1063403760" end="1063403775"></td>
+                                            <td start="1063405200" end="1063405215"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402335" end="1063402350"></td>
+                                            <td start="1063403775" end="1063403790"></td>
+                                            <td start="1063405215" end="1063405230"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402350" end="1063402365"></td>
+                                            <td start="1063403790" end="1063403805"></td>
+                                            <td start="1063405230" end="1063405245"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402365" end="1063402380"></td>
+                                            <td start="1063403805" end="1063403820"></td>
+                                            <td start="1063405245" end="1063405260"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">9:00 PM</td>
+                                            <td start="1063402380" end="1063402395"></td>
+                                            <td start="1063403820" end="1063403835"></td>
+                                            <td start="1063405260" end="1063405275"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402395" end="1063402410"></td>
+                                            <td start="1063403835" end="1063403850"></td>
+                                            <td start="1063405275" end="1063405290"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402410" end="1063402425"></td>
+                                            <td start="1063403850" end="1063403865"></td>
+                                            <td start="1063405290" end="1063405305"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402425" end="1063402440"></td>
+                                            <td start="1063403865" end="1063403880"></td>
+                                            <td start="1063405305" end="1063405320"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">10:00 PM</td>
+                                            <td start="1063402440" end="1063402455"></td>
+                                            <td start="1063403880" end="1063403895"></td>
+                                            <td start="1063405320" end="1063405335"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402455" end="1063402470"></td>
+                                            <td start="1063403895" end="1063403910"></td>
+                                            <td start="1063405335" end="1063405350"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402470" end="1063402485"></td>
+                                            <td start="1063403910" end="1063403925"></td>
+                                            <td start="1063405350" end="1063405365"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402485" end="1063402500"></td>
+                                            <td start="1063403925" end="1063403940"></td>
+                                            <td start="1063405365" end="1063405380"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">11:00 PM</td>
+                                            <td start="1063402500" end="1063402515"></td>
+                                            <td start="1063403940" end="1063403955"></td>
+                                            <td start="1063405380" end="1063405395"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402515" end="1063402530"></td>
+                                            <td start="1063403955" end="1063403970"></td>
+                                            <td start="1063405395" end="1063405410"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402530" end="1063402545"></td>
+                                            <td start="1063403970" end="1063403985"></td>
+                                            <td start="1063405410" end="1063405425"></td>
+                                        </tr>
+                                        <tr>
+                                            <td start="1063402545" end="1063402560"></td>
+                                            <td start="1063403985" end="1063404000"></td>
+                                            <td start="1063405425" end="1063405440"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--!-->
+                            <!--!-->
+                            <div class="tbs-scheduler-task-container" _bl_8="">
+                                <div style="background-color: rgb(0, 123, 255); left: 194.5px; top: 44px; width: 136.5px; height: 165px; visibility: visible;"
+                                    index="2" start="1063401188" end="1063401397" title="Task 31
+                    1:08 AM - 4:37 AM
+                    
+                    Text text text text text text text
+                    
+                    
+                    text text text text text text text text text text text text." margin-start="0.5" margin-end="0">
+                                    <h5>Task 31</h5><span>1:08 AM - 4:37 AM</span>
+                                    <p>Text text text text text text text<br><br><br>text text text text text text text
+                                        text text text text text.</p>
+                                </div>
+                                <div style="background-color: rgb(111, 66, 193); left: 58px; top: 44px; width: 133.5px; height: 143px; visibility: visible;"
+                                    index="3" start="1063401188" end="1063401374" title="Task 24
+                    1:08 AM - 4:14 AM
+                    
+                    Text text text text text text text
+                    
+                    
+                    text text text text text text text text text text text text." margin-start="0" margin-end="0.5">
+                                    <h5>Task 24</h5><span>1:08 AM - 4:14 AM</span>
+                                    <p>Text text text text text text text<br><br><br>text text text text text text text
+                                        text text text text text.</p>
+                                </div>
+                                <div style="background-color: rgb(40, 167, 69); left: 337px; top: 44px; width: 273px; height: 55px; visibility: visible;"
+                                    index="5" start="1063402628" end="1063402688" title="Task 29
+                    1:08 AM - 2:08 AM
+                    
+                    Text text text text text text text
+                    
+                    
+                    text text text text text text text text text text text text." margin-start="0" margin-end="0">
+                                    <h5>Task 29</h5><span>1:08 AM - 2:08 AM</span>
+                                    <p>Text text text text text text text<br><br><br>text text text text text text text
+                                        text text text text text.</p>
+                                </div>
+                                <div style="background-color: rgb(40, 167, 69); left: 337px; top: 616px; width: 273px; height: 165px; visibility: visible;"
+                                    index="6" start="1063403408" end="1063403613" title="Task 26
+                    2:08 PM - 5:33 PM
+                    
+                    Text text text text text text text
+                    
+                    
+                    text text text text text text text text text text text text." margin-start="0" margin-end="0">
+                                    <h5>Task 26</h5><span>2:08 PM - 5:33 PM</span>
+                                    <p>Text text text text text text text<br><br><br>text text text text text text text
+                                        text text text text text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--!-->
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="form-check form-switch ms-auto" style="float:right" title="Patryk Test">
+                    <label class="form-check-label" for="lightSwitch">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="lightSwitch">
+                </div>
+                <div class="form-check form-switch ms-auto" style=" margin-right:13px; float:right" title="Patryk Test">
+                    <label class="form-check-label" for="boxSwitch">
+                        <i class="fa-solid fa-expand"></i>
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="boxSwitch">
+                </div>
+            </footer>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../src/js/orion/scripts.js"></script>
+</body>
+
+</html>
