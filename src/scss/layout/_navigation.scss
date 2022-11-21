@@ -1,4 +1,7 @@
-.navbar {
+.tb-navbar{
+    @extend .navbar;
+}
+.tb-navbar {
     height:100vh;
     min-width: var(--nav-width);
     flex-direction: row;
@@ -8,7 +11,7 @@
     overflow-y: auto;
     z-index: 1002;
     font-size: var(--nav-font-size);
-    .navbar-brand{
+    .tb-navbar-brand{
         padding: 12px;
         margin: 0 auto;
     }
@@ -45,7 +48,7 @@
 
 
 @media (max-width: 1023px) {
-    .navbar{
+    .tb-navbar{
         display: none;
         position: absolute;
         margin-top:39px;

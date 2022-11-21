@@ -3691,7 +3691,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.navbar {
+.navbar, .tb-navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
@@ -3719,13 +3719,19 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
-.navbar > .container,
+.navbar > .container, .tb-navbar > .container,
 .navbar > .container-fluid,
+.tb-navbar > .container-fluid,
 .navbar > .container-sm,
+.tb-navbar > .container-sm,
 .navbar > .container-md,
+.tb-navbar > .container-md,
 .navbar > .container-lg,
+.tb-navbar > .container-lg,
 .navbar > .container-xl,
-.navbar > .container-xxl {
+.tb-navbar > .container-xl,
+.navbar > .container-xxl,
+.tb-navbar > .container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
@@ -10852,7 +10858,7 @@ label, textarea {
   padding: 12px 16px;
 }
 
-.navbar {
+.tb-navbar {
   height: 100vh;
   min-width: var(--nav-width);
   flex-direction: row;
@@ -10863,42 +10869,42 @@ label, textarea {
   z-index: 1002;
   font-size: var(--nav-font-size);
 }
-.navbar .navbar-brand {
+.tb-navbar .tb-navbar-brand {
   padding: 12px;
   margin: 0 auto;
 }
-.navbar ul {
+.tb-navbar ul {
   padding: 0px 12px 0px 24px;
   width: 100%;
 }
-.navbar ul li {
+.tb-navbar ul li {
   list-style: none;
   padding: var(--nav-item-padding);
 }
-.navbar ul li i {
+.tb-navbar ul li i {
   padding-right: 6px;
 }
-.navbar ul li a {
+.tb-navbar ul li a {
   color: var(--nav-item-color);
 }
-.navbar ul li a:hover {
+.tb-navbar ul li a:hover {
   color: var(--nav-item-color-hover);
 }
-.navbar ul li.tb-nav-title {
+.tb-navbar ul li.tb-nav-title {
   padding-top: 6px;
   padding-left: 0px;
   font-weight: bold;
   cursor: none;
 }
-.navbar.show {
+.tb-navbar.show {
   display: flex;
 }
-.navbar.hide {
+.tb-navbar.hide {
   display: none;
 }
 
 @media (max-width: 1023px) {
-  .navbar {
+  .tb-navbar {
     display: none;
     position: absolute;
     margin-top: 39px;
@@ -10991,7 +10997,7 @@ footer {
   display: block;
 }
 
-.navbar + .page .title-box-exit {
+.navbar + .page .title-box-exit, .tb-navbar + .page .title-box-exit {
   display: none;
 }
 
@@ -11182,21 +11188,14 @@ footer {
   position: relative;
   z-index: 1000;
   border-bottom: 0;
+  overflow: hidden;
+  overflow-x: auto;
+  display: flex;
+  flex-wrap: nowrap;
 }
-.tb-card-tabs .tb-nav-tabs .tb-nav-link {
-  background: rgba(53, 64, 82, 0.024);
-  border: 1px solid var(--base-border-color);
-  padding: var(--tabs-nav-padding);
-  color: var(--tabs-nav-link-color);
-  font-size: var(--tabs-font-size);
-}
-.tb-card-tabs .tb-nav-tabs .tb-nav-link.active, .tb-card-tabs .tb-nav-tabs .tb-nav-link:active, .tb-card-tabs .tb-nav-tabs .tb-nav-link:hover {
-  border-color: rgba(110, 117, 130, 0.2);
-  box-shadow: none !important;
-}
-.tb-card-tabs .tb-nav-tabs .tb-nav-link.active {
-  background: #ffffff;
-  color: var(--tabs-nav-link-active-color);
+.tb-card-tabs .tb-nav-tabs .tb-nav-item {
+  display: inline-block;
+  flex: 0 0 auto;
 }
 .tb-card-tabs .tb-nav-tabs .tb-nav-item:not(:first-child) .tb-nav-link {
   border-top-left-radius: 0;
@@ -11207,13 +11206,29 @@ footer {
 .tb-card-tabs .tb-nav-tabs .tb-nav-item + .tb-nav-item {
   margin-left: -1px;
 }
+.tb-card-tabs .tb-nav-tabs .tb-nav-item .tb-nav-link {
+  background: rgba(53, 64, 82, 0.024);
+  border: 1px solid var(--base-border-color);
+  padding: var(--tabs-nav-padding);
+  color: var(--tabs-nav-link-color);
+  font-size: var(--tabs-font-size);
+}
+.tb-card-tabs .tb-nav-tabs .tb-nav-item .tb-nav-link.active, .tb-card-tabs .tb-nav-tabs .tb-nav-item .tb-nav-link:active, .tb-card-tabs .tb-nav-tabs .tb-nav-item .tb-nav-link:hover {
+  border-color: rgba(110, 117, 130, 0.2);
+  box-shadow: none !important;
+}
+.tb-card-tabs .tb-nav-tabs .tb-nav-item .tb-nav-link.active {
+  background: #ffffff;
+  color: var(--tabs-nav-link-active-color);
+}
 .tb-card-tabs .tb-card-body {
   border: 1px solid var(--base-border-color);
   padding: 12px;
   height: 100%;
   max-height: calc(100% - 44px);
   overflow-y: auto;
-  background-color: var(--tabs-body-background);
+  background-color: #fff;
+  margin-bottom: 12px;
 }
 
 .card-tabs-only {

@@ -16,27 +16,13 @@
         position: relative;
         z-index: 1000;
         border-bottom: 0;
-
-        .tb-nav-link {
-            background: rgba(53, 64, 82, 0.024);
-            border: 1px solid var(--base-border-color);
-            padding: var(--tabs-nav-padding);
-            color: var(--tabs-nav-link-color);
-            font-size: var(--tabs-font-size);
-            &.active,
-            &:active,
-            &:hover {
-                border-color: rgba(110, 117, 130, 0.2);
-                box-shadow: none !important;
-            }
-
-            &.active {
-                background: #ffffff;
-                color: var(--tabs-nav-link-active-color);
-            }
-        }
-
+        overflow: hidden;
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
         .tb-nav-item {
+            display: inline-block;
+            flex: 0 0 auto;
             &:not(:first-child) .tb-nav-link {
                 border-top-left-radius: 0;
             }
@@ -48,6 +34,24 @@
             + .tb-nav-item {
                 margin-left: -1px;
             }
+            .tb-nav-link {
+                background: rgba(53, 64, 82, 0.024);
+                border: 1px solid var(--base-border-color);
+                padding: var(--tabs-nav-padding);
+                color: var(--tabs-nav-link-color);
+                font-size: var(--tabs-font-size);
+                &.active,
+                &:active,
+                &:hover {
+                    border-color: rgba(110, 117, 130, 0.2);
+                    box-shadow: none !important;
+                }
+
+                &.active {
+                    background: #ffffff;
+                    color: var(--tabs-nav-link-active-color);
+                }
+            }
         }
     }
     .tb-card-body {
@@ -56,7 +60,8 @@
         height: 100%;
         max-height: calc(100% - 44px);
         overflow-y: auto;
-        background-color: var(--tabs-body-background);
+        background-color: #fff;
+        margin-bottom: 12px;
     }
 }
 .card-tabs-only {
