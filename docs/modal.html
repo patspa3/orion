@@ -19,8 +19,8 @@
 <body>
     <div class="wrapper-fluid container-fluid">
         <!-- wrapper container - oznacza tryb box i umożliwia użycie zmiennej --base-site-max-width -->
-        <aside class="navbar show">
-            <a class="img-fluid navbar-brand" href="#"><img src="https://uidemo.tagbites.com/images/logo.png" /> </a>
+        <aside class="tb-navbar show">
+            <a class="img-fluid tb-navbar-brand" href="#"><img src="https://uidemo.tagbites.com/images/logo.png" /> </a>
             <hr />
             <ul>
                 <li class="tb-nav-title"><a href="#">Link</a></li>
@@ -33,7 +33,7 @@
                 <li><a href="forms.html"><i class="fa-solid fa-bomb"></i>Forms</a></li>
                 <li><a href="formsROM.html"><i class="fa-solid fa-bomb"></i>Forms read only mode</a></li>
                 <li><a href="#"><i class="fa-solid fa-pen"></i>Link</a></li>
-                <li><a href="#"><i style="color:rgb(28, 12, 170);" class="fa-solid fa-phone"></i></i>Link</a></li>
+                <li><a href="#"><i style="color:rgb(218, 14, 92);" class="fa-solid fa-phone"></i></i>Link</a></li>
                 <li><a href="#"><i class="fa-solid fa-film"></i>Link</a></li>
                 <li><a href="clearbs.html"><i class="fa-solid fa-house"></i>Clear Bootstrap</a></li>
                 <li><a href="blank.html"><i class="fa-solid fa-house"></i>Blank page</a></li>
@@ -96,27 +96,22 @@
                 </div>
             </div>
             <div class="content">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
-                </button>
-
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <div class="tb-modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true" style="display: block">
+                    <div class="tb-modal-dialog">
+                        <div class="tb-modal-content">
+                            <div class="tb-modal-header">
+                                <h1 class="tb-modal-title fs-5" id="exampleModalLabel">Modal title</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="tb-modal-body">
                                 ...
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                            <div class="tb-modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Action A</button>
+                                <button type="button" class="btn btn-primary">Action B</button>
                             </div>
                         </div>
                     </div>
@@ -144,7 +139,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="../src/js/orion/scripts.js"></script>
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>

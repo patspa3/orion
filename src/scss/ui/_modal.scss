@@ -1,44 +1,48 @@
-.modal {
+.tb-modal {
+    @extend .modal;
     position: absolute !important;
     backdrop-filter: blur(1.5px);
     overflow-y: auto;
-    background-color: rgba(54, 54, 54, 0.03);
     max-height: 100vh;
-    .modal-dialog {
+    .tb-modal-dialog {
+        @extend .modal-dialog;
         width: var(--modal-width);
         max-width: 96vw;
-        .modal-content {
+        .tb-modal-content {
+            @extend .modal-content;
             border-radius: var(--modal-radius);
             border: none;
             -webkit-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
-            .modal-header {
+            .tb-modal-header {
+                @extend .modal-header;
                 border-top-left-radius: var(--modal-radius);
                 border-top-right-radius: var(--modal-radius);
-                background-color: var(--modal-header-background-color);
                 font-size: var(--modal-header-font-size);
                 h1,
                 h2,
                 h3,
                 h4,
                 h5,
-                .btn-close {
-                    color: var(--modal-header-font-color);
+                h6{
+                    margin-bottom: 0px;
                 }
                 .btn-close {
                     background: transparent
-                        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
+                        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
                         center/1em auto no-repeat;
                 }
             }
-            .modal-body {
-                background-color: var(--modal-body-background-color);
+            .tb-modal-body {
+                @extend .modal-body;
             }
-            .modal-footer {
+            .tb-modal-footer {
+                @extend .modal-footer;
+                padding: 6px 12px;
+                border-top: 0px;
                 border-bottom-left-radius: var(--modal-radius);
                 border-bottom-right-radius: var(--modal-radius);
-                background-color: var(--modal-footer-background-color);
             }
         }
     }
