@@ -121,10 +121,11 @@ $(document).on("click", ".navbar-toggler", function (e) {
     }
   }
 })();
+/*
 fetch("_navigation.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
     document.querySelector("aside").innerHTML = data;
-  });
+  });*/
