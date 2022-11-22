@@ -20,34 +20,7 @@
     <div class="wrapper-fluid container-fluid">
         <!-- wrapper container - oznacza tryb box i umożliwia użycie zmiennej --base-site-max-width -->
         <aside class="tb-navbar show">
-            <a class="img-fluid tb-navbar-brand" href="#"><img src="https://uidemo.tagbites.com/images/logo.png" /> </a>
-            <hr />
-            <ul>
-                <li class="tb-nav-title"><a href="#">Link</a></li>
-                <li><a href="index.html"><i style="color:rgb(14, 184, 71);" class="fa-solid fa-house"></i>Index</a></li>
-                <li><a href="liderraport.html"><i class="fa-solid fa-pen"></i>Raport Lidera</a></li>
-                <li><a href="modal.html"><i class="fa-solid fa-bomb"></i>Modal</a></li>
-                <li><a href="scheduler.html"><i class="fa-solid fa-filter"></i>Scheduler</a></li>
-                <li><a href="timespan.html"><i class="fa-solid fa-lock"></i>TimeSpan</a></li>
-                <li><a href="radio.html"><i class="fa-solid fa-bomb"></i>Radio</a></li>
-                <li><a href="forms.html"><i class="fa-solid fa-bomb"></i>Forms</a></li>
-                <li><a href="formsROM.html"><i class="fa-solid fa-bomb"></i>Forms read only mode</a></li>
-                <li><a href="#"><i class="fa-solid fa-pen"></i>Link</a></li>
-                <li><a href="#"><i style="color:rgb(218, 14, 92);" class="fa-solid fa-phone"></i></i>Link</a></li>
-                <li><a href="#"><i class="fa-solid fa-film"></i>Link</a></li>
-                <li><a href="clearbs.html"><i class="fa-solid fa-house"></i>Clear Bootstrap</a></li>
-                <li><a href="blank.html"><i class="fa-solid fa-house"></i>Blank page</a></li>
-                <li class="tb-nav-title"><a href="#">Link</a></li>
-                <li><a href="#"><i class="fa-solid fa-music"></i>Link</a></li>
-                <li><a href="#"><i class="fa-solid fa-music"></i>
-                        <div>Link sd asd asd asd asd asd asdddsaasasd</div>
-                    </a></li>
-                <li><a href="#"><i class="fa-solid fa-music"></i>Link</a></li>
-                <li><a href="#"><i class="fa-solid fa-bomb"></i>Link</a></li>
-                <li><a href="#"><i class="fa-solid fa-house"></i>Link</a></li>
-                <li><a href="#"><i class="fa-solid fa-image"></i>Link</a></li>
-                <li><a href="#"><i class="fa-solid fa-music"></i>Link</a></li>
-            </ul>
+
         </aside>
         <section class="page">
             <div class="title-box text-center">
@@ -102,7 +75,7 @@
                         <!--!-->
                         <div class="form-group">
                             <!--!--><label style="max-height: 150px">Time Of Day</label>
-                            <!--!--><input type="time" class="form-control"
+                            <!--!--><input type="time" class="tb-form-control"
                                 id="CurrentExample.Instance_TimeSpanExample_TimeOfDay" name="TimeOfDay"
                                 hotkeys="-,shift =" step="3600" min="00:00:00" max="23:59:59.9999999">
                         </div>
@@ -111,7 +84,7 @@
                         <!--!-->
                         <div class="form-group">
                             <!--!--><label style="max-height: 150px">Time Of Day With Minutes</label>
-                            <!--!--><input type="time" class="form-control"
+                            <!--!--><input type="time" class="tb-form-control"
                                 id="CurrentExample.Instance_TimeSpanExample_TimeOfDayWithMinutes"
                                 name="TimeOfDayWithMinutes" hotkeys="-,shift =" step="60" min="00:00:00"
                                 max="23:59:59.9999999">
@@ -121,7 +94,7 @@
                         <!--!-->
                         <div class="form-group">
                             <!--!--><label style="max-height: 150px">Time Of Day With Seconds</label>
-                            <!--!--><input type="time" class="form-control"
+                            <!--!--><input type="time" class="tb-form-control"
                                 id="CurrentExample.Instance_TimeSpanExample_TimeOfDayWithSeconds"
                                 name="TimeOfDayWithSeconds" hotkeys="-,shift =" step="1" min="00:00:00"
                                 max="23:59:59.9999999">
@@ -131,7 +104,7 @@
                         <!--!-->
                         <div class="form-group">
                             <!--!--><label style="max-height: 150px">Time Of Day With Milliseconds</label>
-                            <!--!--><input type="time" class="form-control"
+                            <!--!--><input type="time" class="tb-form-control"
                                 id="CurrentExample.Instance_TimeSpanExample_TimeOfDayWithMilliseconds"
                                 name="TimeOfDayWithMilliseconds" hotkeys="-,shift =" step="0.001" min="00:00:00"
                                 max="23:59:59.9999999">
@@ -141,7 +114,7 @@
                         <!--!-->
                         <div class="form-group">
                             <!--!--><label style="max-height: 150px">Time Span Positive</label>
-                            <!--!--><input type="time" class="form-control"
+                            <!--!--><input type="time" class="tb-form-control"
                                 id="CurrentExample.Instance_TimeSpanExample_TimeSpanPositive" name="TimeSpanPositive"
                                 hotkeys="-,shift =" step="60" min="00:00:00" max="18250.00:00:00">
                         </div>
@@ -153,7 +126,7 @@
                             <!--!-->
                             <div class="input-group">
                                 <div class="input-group-prepend"><button class="btn btn-outline" type="button"
-                                        tabindex="-1">+</button></div><input type="time" class="form-control"
+                                        tabindex="-1">+</button></div><input type="time" class="tb-form-control"
                                     id="CurrentExample.Instance_TimeSpanExample_TimeSpanPositiveOrNegative"
                                     name="TimeSpanPositiveOrNegative" hotkeys="-,shift =" step="60"
                                     min="-18250.00:00:00" max="18250.00:00:00">
@@ -167,7 +140,7 @@
                             <!--!-->
                             <div class="input-group">
                                 <div class="input-group-prepend"><button class="btn btn-outline" type="button"
-                                        tabindex="-1">-</button></div><input type="time" class="form-control"
+                                        tabindex="-1">-</button></div><input type="time" class="tb-form-control"
                                     id="CurrentExample.Instance_TimeSpanExample_TimeSpan" name="TimeSpan"
                                     hotkeys="-,shift =" step="60" min="-18250.00:00:00" max="18250.00:00:00">
                             </div>
@@ -180,7 +153,7 @@
                             <!--!-->
                             <div class="input-group">
                                 <div class="input-group-prepend"><button class="btn btn-outline" type="button"
-                                        tabindex="-1">+</button></div><input type="time" class="form-control"
+                                        tabindex="-1">+</button></div><input type="time" class="tb-form-control"
                                     id="CurrentExample.Instance_TimeSpanExample_NullableTimeSpan"
                                     name="NullableTimeSpan" hotkeys="-,shift =" step="60" min="-18250.00:00:00"
                                     max="18250.00:00:00">

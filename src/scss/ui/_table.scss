@@ -1,9 +1,23 @@
 .tb-table {
+    table-layout: fixed;
     @extend .table;
     font-size: 13px;
     background-color: #fff;
     .tbs-table-group {
         font-weight: bold;
+    }
+    th,.tbs-table-group {
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+    td,
+    th {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .tbs-cell-icon{
+        text-align: center;
     }
 }
 .tb-table-bordered {

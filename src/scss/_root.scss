@@ -2,6 +2,7 @@
 --dev-page-height:100%;
 
 --base-border-color: #dedede;
+--base-content-padding: 12px 16px;
 --base-site-max-width: 1400px;
 --base-background-color: #f8f8f8;
 --base-font: OpenSans;//TODO
@@ -17,10 +18,10 @@
 
 --nav-width: 250px;
 --nav-mobile-width: 300px;
---nav-background-color: #354052;
---nav-item-color: #e7e7e7;
+--nav-background-color: #404e67;//#404e67 #354052
+--nav-item-color: #dcdcdc;
 --nav-item-color-hover: #eeeeee;
---nav-item-padding: 2px 2px 2px 12px;
+--nav-item-padding: 3px 2px 3px 12px;
 --nav-font-size: 15px;
 
 --content-background-color: var(--base-background-color);
@@ -49,7 +50,7 @@
 
 --scheduler-background: white;
 
---button-border-radius:4px;
+--button-border-radius:2px;
 }
 
 .card {

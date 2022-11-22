@@ -1,0 +1,11 @@
+.tb-pagination {
+    @extend .pagination;
+    margin-top: 12px;
+    .page-item {
+        > .page-link {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}

@@ -13,8 +13,11 @@
         background-color: var(--scheduler-background);
         border-color: var(--table-border-color) !important;
         table-layout: fixed!important;
-        tbody{
+        > tbody{
             border: 1px solid var(--table-border-color);
+            &:first-child{
+                border-top:0px;
+            }
         }
     }
     tr {
@@ -107,11 +110,11 @@
 }
 .tbs-scheduler-allday-timeline td:first-child,
 .tbs-scheduler-header-days-timeline td:first-child {
-    width: 55px;
+    width: 65px;
 }
 
 .tbs-scheduler-content-hours td:first-child {
-    width: 55px;
+    width: 65px;
     text-align: center;
     vertical-align: top;
 }

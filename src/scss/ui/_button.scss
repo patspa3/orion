@@ -1,0 +1,8 @@
+.tb-btn{
+    @extend .btn;
+    *:focus{
+        box-shadow: none;
+    }
+    border-color: var(--base-border-color);
+    border-radius: var(--base-border-radius);
+} 

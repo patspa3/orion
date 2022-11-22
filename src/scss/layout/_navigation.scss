@@ -1,57 +1,67 @@
-.tb-navbar{
+.tb-navbar {
     @extend .navbar;
 }
 .tb-navbar {
-    height:100vh;
+    height: 100vh;
     min-width: var(--nav-width);
     flex-direction: row;
     align-content: flex-start;
-    flex:0;
+    flex: 0;
     background-color: var(--nav-background-color);
     overflow-y: auto;
     z-index: 1002;
     font-size: var(--nav-font-size);
-    .tb-navbar-brand{
+    .tb-navbar-brand {
         padding: 12px;
         margin: 0 auto;
     }
     ul {
         padding: 0px 12px 0px 24px;
-        width:100%;
+        width: 100%;
         li {
             list-style: none;
             padding: var(--nav-item-padding);
-            i{
-                padding-right: 6px;
-            }
-            a{
+            a {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
                 color: var(--nav-item-color);
                 &:hover {
                     color: var(--nav-item-color-hover);
                 }
+                i {
+                    width: 15px;
+                    margin-right: 12px;
+                    margin-top: 3px;
+                }
+                span {
+                }
             }
         }
-        li.tb-nav-title{
-            padding-top:6px;
-            padding-left:0px;
-            font-weight: bold;
+        li.tb-nav-title {
+            padding-top: 6px;
+            padding-left: 0px;
+            font-weight: normal;
+            letter-spacing: 1px;
             cursor: none;
+            span {
+                color: rgb(211, 211, 211) !important;
+            }
         }
     }
-    &.show{
+    &.show {
         display: flex;
     }
-    &.hide{
+    &.hide {
         display: none;
     }
 }
 
-
 @media (max-width: 1023px) {
-    .tb-navbar{
+    .tb-navbar {
         display: none;
         position: absolute;
-        margin-top:39px;
+        margin-top: 39px;
         height: calc(var(--dev-page-height) - 39px);
         width: var(--nav-mobile-width);
     }

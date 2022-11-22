@@ -1,59 +1,79 @@
-.row {
-  margin-bottom: 12px;
+.tb-input-group {
+	@extend .input-group;
+}
+.tb-input-group-append {
+	.tb-btn {
+		border-radius: 0px;
+		border: 1px solid var(--base-border-color);
+		border-right: 0px;
+		&:last-child {
+			border-right: 1px solid var(--base-border-color) !important;
+			border-top-right-radius: var(--button-border-radius);
+			border-bottom-right-radius: var(--button-border-radius);
+		}
+	}
 }
 
-.form-label {
-  margin-bottom: 0.1rem;
+.tb-form-label {
+	@extend .form-label;
+	margin-bottom: 0.1rem;
 }
 
-.form-control:focus,
+.tb-form-control{
+	@extend .form-control;
+	border-radius: var(--button-border-radius);
+	border-color: var(--base-border-color);
+}
+
+.tb-form-control:focus,
 .form-check-input:focus,
 .form-select:focus,
 button:focus,
-.btn:focus {
-  box-shadow: 0 0 0 0.05rem rgb(13 110 253 / 25%);
+.tb-btn:focus {
+	box-shadow: 0 0 0 0.05rem rgb(13 110 253 / 25%);
 }
+
 .navbar-toggler.button:focus,
 .btn-close:focus {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 label + .form-control-plaintext,
 .form-control-plaintext {
-  border-bottom: 1px solid var(--base-border-color);
-  padding: 0px;
+	border-bottom: 1px solid var(--base-border-color);
+	padding: 0px;
 }
 
-button,
-.btn {
-  border-radius: var(--button-border-radius);
-}
 .nav-link {
-  border-radius: 0px;
+	border-radius: 0px;
 }
 
 .btn-outline {
-  border: 1px solid var(--base-border-color);
-  border-radius: 0px;
-  &:hover {
-    border: 1px solid var(--base-border-color) !important;
-    background-color: #ebebeb !important;
-  }
-  &:focus {
-    box-shadow: none;
-  }
+	border: 1px solid var(--base-border-color);
+	border-radius: 0px;
+
+	&:hover {
+		border: 1px solid var(--base-border-color) !important;
+		background-color: #ebebeb !important;
+	}
+
+	&:focus {
+		box-shadow: none;
+	}
 }
 
 $columns: 12;
+
 @for $i from 1 through $columns {
-  .col-#{$i} {
-    margin-top: 0px;
-    margin-bottom: 6px;
-  }
+	.col-#{$i} {
+		margin-top: 0px;
+		margin-bottom: 6px;
+	}
 }
+
 @for $i from 1 through $columns {
-  .col-md-#{$i} {
-    margin-top: 0px;
-    margin-bottom: 6px;
-  }
+	.col-md-#{$i} {
+		margin-top: 0px;
+		margin-bottom: 6px;
+	}
 }

@@ -58,19 +58,7 @@ $(document).on("click", ".navbar-toggler", function (e) {
         localStorage.getItem("lightSwitch") === "dark";
 
       if (isSelected) {
-        document.querySelectorAll(".bg-light").forEach((element) => {
-          element.className = element.className.replace(/-light/g, "-dark");
-        });
-
-        document.body.classList.add("bg-dark");
-        document.body.classList.add("dark-mode");
-
-        if (document.body.classList.contains("text-dark")) {
-          document.body.classList.replace("text-dark", "text-light");
-        } else {
-          document.body.classList.add("text-light");
-        }
-
+        document.body.classList.add("tb-dark-mode");
         lightSwitch.checked = true;
       }
     }
@@ -79,12 +67,8 @@ $(document).on("click", ".navbar-toggler", function (e) {
         localStorage.setItem("lightSwitch", "dark");
         darkMode();
       } else {
-        document.querySelectorAll(".bg-dark").forEach((element) => {
-          element.className = element.className.replace(/-dark/g, "-light");
-        });
-        document.body.classList.replace("text-light", "text-dark");
         localStorage.removeItem("lightSwitch");
-        document.body.classList.remove("dark-mode");
+        document.body.classList.remove("tb-dark-mode");
       }
     }
   }
@@ -137,3 +121,10 @@ $(document).on("click", ".navbar-toggler", function (e) {
     }
   }
 })();
+fetch("_navigation.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("aside").innerHTML = data;
+  });
