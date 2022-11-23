@@ -21,6 +21,9 @@
         li {
             list-style: none;
             padding: var(--nav-item-padding);
+            &:hover {
+                background-color: #475671;
+            }
             a {
                 display: flex;
                 flex-direction: row;
@@ -43,7 +46,12 @@
             padding-left: 0px;
             font-weight: normal;
             letter-spacing: 1px;
-            cursor: none;
+            &:hover {
+                background-color: inherit;
+            }
+            a {
+                cursor: default;
+            }
             span {
                 color: rgb(211, 211, 211) !important;
             }

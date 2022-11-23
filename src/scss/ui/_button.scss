@@ -1,8 +1,18 @@
-.tb-btn{
+.tb-btn-group {
+    @extend .btn-group;
+}
+.tb-form-control-plaintext {
+    @extend .form-control-plaintext;
+}
+
+.tb-btn {
     @extend .btn;
-    *:focus{
+    *:focus {
         box-shadow: none;
     }
-    border-color: var(--base-border-color);
+    i{
+        margin-right:6px
+    }
+    //border-color: var(--base-border-color);
     border-radius: var(--base-border-radius);
-} 
+}

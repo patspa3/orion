@@ -9,6 +9,8 @@
 }
 .tb-nav-link {
     @extend .nav-link;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
 }
 
 .tb-card-tabs {
@@ -30,10 +32,14 @@
             &:not(:last-child) .tb-nav-link {
                 border-top-right-radius: 0;
             }
-
+            i{
+                margin-right: 6px;
+            }
             + .tb-nav-item {
                 margin-left: -1px;
             }
+
+
             .tb-nav-link {
                 background: rgba(53, 64, 82, 0.024);
                 border: 1px solid var(--base-border-color);
@@ -91,7 +97,9 @@
                 border-color: rgba(110, 117, 130, 0.2);
                 box-shadow: none !important;
             }
-
+            i{
+                margin-right: 6px;
+            }
             &.active {
                 background: #ffffff;
                 color: var(--tabs-nav-link-active-color);

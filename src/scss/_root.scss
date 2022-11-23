@@ -2,6 +2,8 @@
 --dev-page-height:100%;
 
 --base-border-color: #dedede;
+--base-border-radius: 2px;
+
 --base-content-padding: 12px 16px;
 --base-site-max-width: 1400px;
 --base-background-color: #f8f8f8;
@@ -51,9 +53,4 @@
 --scheduler-background: white;
 
 --button-border-radius:2px;
-}
-
-.card {
-    --bs-card-border-radius: 5px;
-    --bs-card-inner-border-radius: 5px;
 }

@@ -6,6 +6,27 @@
             &:focus {
                 box-shadow: none;
             }
+            &:first-child {
+                border-top-left-radius: var(--base-border-radius);
+                border-bottom-left-radius: var(--base-border-radius);
+            }
+            &:last-child {
+                border-top-right-radius: var(--base-border-radius);
+                border-bottom-right-radius: var(--base-border-radius);
+            }
         }
+    }
+}
+.tb-pagination-clear {
+    @extend .tb-pagination;
+    * {
+        border: none;
+        background-color: inherit;
+    }
+    .page-link {
+        &:hover {
+            background-color: rgb(231, 231, 231);
+        }
+        padding: 3px 6px;
     }
 }

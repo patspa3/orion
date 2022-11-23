@@ -9,12 +9,13 @@
         width: var(--modal-width);
         max-width: 96vw;
         .tb-modal-content {
+            max-height: calc(100vh - 56px);
             @extend .modal-content;
             border-radius: var(--modal-radius);
             border: none;
-            -webkit-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 0px 25px -4px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 0px 0px 25px px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
             .tb-modal-header {
                 @extend .modal-header;
                 border-top-left-radius: var(--modal-radius);
@@ -36,6 +37,8 @@
             }
             .tb-modal-body {
                 @extend .modal-body;
+                overflow: hidden;
+                overflow-y: auto;
             }
             .tb-modal-footer {
                 @extend .modal-footer;

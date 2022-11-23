@@ -20,11 +20,13 @@
 	<div class="wrapper-fluid container-fluid">
 		<!-- wrapper container - oznacza tryb box i umożliwia użycie zmiennej --base-site-max-width -->
 		<aside class="tb-navbar show">
-			
-			<a class="tb-navbar-brand" href="#"><img class="img-fluid" src="https://lite-dev.vendoerp.com/images/logo.png"/></a>
+
+			<a class="tb-navbar-brand" href="#"><img class="img-fluid"
+					src="https://lite-dev.vendoerp.com/images/logo.png" /></a>
 			<ul>
 				<li class="tb-nav-title"><a href="#"><span>Link</span></a></li>
-				<li><a href="index.html"><i style="color:rgb(14, 184, 71);" class="fa-solid fa-house"></i><span>Index</span></a></li>
+				<li><a href="index.html"><i style="color:rgb(14, 184, 71);"
+							class="fa-solid fa-house"></i><span>Index</span></a></li>
 				<li><a href="liderraport.html"><i class="fa-solid fa-pen"></i><span>Raport Lidera</span></a></li>
 				<li><a href="modal.html"><i class="fa-solid fa-bomb"></i><span>Modal</span></a></li>
 				<li><a href="scheduler.html"><i class="fa-solid fa-filter"></i><span>Scheduler</span></a></li>
@@ -33,7 +35,8 @@
 				<li><a href="forms.html"><i class="fa-solid fa-bomb"></i><span>Forms</span></a></li>
 				<li><a href="formsROM.html"><i class="fa-solid fa-bomb"></i><span>Forms read only mode</span></a></li>
 				<li><a href="colors.html"><i class="fa-solid fa-pen"></i><span>Colors</span></a></li>
-				<li><a href="#"><i style="color:rgb(218, 14, 92);" class="fa-solid fa-phone"></i><span>Link</span></a></li>
+				<li><a href="#"><i style="color:rgb(218, 14, 92);" class="fa-solid fa-phone"></i><span>Link</span></a>
+				</li>
 				<li><a href="#"><i class="fa-solid fa-film"></i><span>Link</span></a></li>
 				<li><a href="clearbs.html"><i class="fa-solid fa-house"></i><span>Clear Bootstrap</span></a></li>
 				<li><a href="blank.html"><i class="fa-solid fa-house"></i><span>Blank page</span></a></li>
@@ -104,7 +107,7 @@
 				<div class="col-lg-12">
 					<!--!-->
 					<div class="tb-form-group">
-						<!--!--><label style="max-height: 30px">Pracownik</label>
+						<!--!--><label class="tb-form-label">Pracownik</label>
 						<!--!-->
 						<div class="tb-input-group"><input type="text" class="tb-form-control"
 								id="CurrentPage.View.Content_DesignViewModel_User"
@@ -115,8 +118,7 @@
 						</div>
 					</div>
 				</div>
-				<h5>With label</h5>
-				<form class="row">
+				<div class="row">
 					<div class="col-md-6">
 						<label for="inputEmail4" class="tb-form-label">Email</label>
 						<input type="email" class="tb-form-control" id="inputEmail4">
@@ -140,7 +142,7 @@
 					</div>
 					<div class="col-md-4">
 						<label for="inputState" class="tb-form-label">State</label>
-						<select id="inputState" class="form-select">
+						<select id="inputState" class="tb-form-select">
 							<option selected>Choose...</option>
 							<option>...</option>
 						</select>
@@ -160,7 +162,7 @@
 					<div class="col-12">
 						<button type="submit" class="tb-btn btn-primary">Sign in</button>
 					</div>
-				</form>
+				</div>
 				<div class="input-group mb-3">
 					<button class="tb-btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
 					<input type="text" class="tb-form-control" placeholder=""
@@ -202,6 +204,52 @@
 						</a>
 					</li>
 				</ul>
+
+				<ul class="tb-pagination-clear">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">«</span>
+						</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">»</span>
+						</a>
+					</li>
+				</ul>
+				<div class="row">
+					<div class="col-12">
+						<!--!-->
+						<div class="tb-card">
+							<div class="card-header">Example</div>
+							<div class="card-body">
+								<!--!-->
+								<div class="row">
+									<div class="col-12">
+										<!--!-->
+										<div class="tb-form-group">
+											<!--!--><label class="tb-form-label">Field</label>
+											<!--!-->
+											<div class="tb-input-group"><select class="tb-form-select">
+													<option value="0" disabled="" style="display:none" selected="">
+													</option>
+													<option value="1">Empty</option>
+													<option value="2">Item 1</option>
+													<option value="3">Item 2</option>
+													<option value="4">Item 3</option>
+												</select>
+												<div class="input-group-append"><button class="tb-btn btn-outline-secondary" type="button" id="button-addon2">X</button></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<footer>
