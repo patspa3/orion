@@ -20,23 +20,21 @@
     <div class="wrapper-fluid container-fluid">
         <!-- wrapper container - oznacza tryb box i umożliwia użycie zmiennej --base-site-max-width -->
         <aside class="tb-navbar show">
-
-            <a class="tb-navbar-brand" href="#"><img class="img-fluid"
-                    src="https://lite-dev.vendoerp.com/images/logo.png" /></a>
+            <a class="tb-navbar-brand" href="#"><img class="img-fluid" src="https://lite-dev.vendoerp.com/images/logo.png" /></a>
             <ul>
                 <li class="tb-nav-title"><a href="#"><span>Link</span></a></li>
-                <li><a href="index.html"><i style="color:rgb(14, 184, 71);"
-                            class="fa-solid fa-house"></i><span>Index</span></a></li>
+                <li><a href="index.html"><i style="color:rgb(14, 184, 71);" class="fa-solid fa-house"></i><span>Index</span></a>
+                </li>
                 <li><a href="liderraport.html"><i class="fa-solid fa-pen"></i><span>Raport Lidera</span></a></li>
                 <li><a href="modal.html"><i class="fa-solid fa-bomb"></i><span>Modal</span></a></li>
+                <li><a href="longmodal.html"><i class="fa-solid fa-bomb"></i><span>Long Modal</span></a></li>
                 <li><a href="scheduler.html"><i class="fa-solid fa-filter"></i><span>Scheduler</span></a></li>
                 <li><a href="timespan.html"><i class="fa-solid fa-lock"></i><span>TimeSpan</span></a></li>
                 <li><a href="radio.html"><i class="fa-solid fa-bomb"></i><span>Radio</span></a></li>
                 <li><a href="forms.html"><i class="fa-solid fa-bomb"></i><span>Forms</span></a></li>
                 <li><a href="formsROM.html"><i class="fa-solid fa-bomb"></i><span>Forms read only mode</span></a></li>
                 <li><a href="colors.html"><i class="fa-solid fa-pen"></i><span>Colors</span></a></li>
-                <li><a href="#"><i style="color:rgb(218, 14, 92);" class="fa-solid fa-phone"></i><span>Link</span></a>
-                </li>
+                <li><a href="table.html"><i style="color:rgb(87, 241, 72);" class="fa-solid fa-table"></i><span>Editable table</span></a></li>
                 <li><a href="#"><i class="fa-solid fa-film"></i><span>Link</span></a></li>
                 <li><a href="clearbs.html"><i class="fa-solid fa-house"></i><span>Clear Bootstrap</span></a></li>
                 <li><a href="blank.html"><i class="fa-solid fa-house"></i><span>Blank page</span></a></li>
@@ -130,8 +128,19 @@
                             </tr>
                             <tr class="tb-table-edit tbs-table-item-tr-top tbs-table-item-tr-bottom">
                                 <td class="tbs-cell-icon"></td>
-                                <td class="font-weight-bold text-center">2022-11-21</td>
-                                <td style="color: #000000"><input value="Tu można pisać" class="tb-form-control tb-inline-edit"></td>
+                                <td class="font-weight-bold text-center"><input type="date"
+                                        class="tb-form-control tb-inline-edit"></td>
+                                <td style="color: #000000">
+                                    <div class="input-group">
+                                        <input value="Tu można pisać" class="tb-form-control tb-inline-edit">
+                                            <button class="tb-btn" type="button">
+                                                <i class="fa-solid fa-check">
+                                                </i>
+                                            </button>
+                                    </div>
+                                    
+
+                                </td>
                                 <td class="text-right">0,00</td>
                                 <td class="text-center">
                                     <!--!-->&nbsp;
@@ -143,12 +152,12 @@
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
                                 <td class="tbs-cell-icon"></td>
                                 <td class="font-weight-bold text-center">2022-11-28</td>
-                                <td contenteditable style="color: #000000">Test pola edycyjnego</td>
+                                <td style="color: #000000">Test pola edycyjnego</td>
                                 <td class="text-right">0,00</td>
                                 <td class="text-center">
                                     <!--!-->&nbsp;
                                 </td>
-                                <td class="text-center" style="background-color: #FFFFFF">
+                                <td class="text-center">
                                     <!--!-->&nbsp;
                                 </td>
                             </tr>
@@ -160,7 +169,7 @@
                                 <td class="text-center">
                                     <!--!-->&nbsp;
                                 </td>
-                                <td class="text-center" style="background-color: #FFFFFF">
+                                <td class="text-center">
                                     <!--!-->&nbsp;
                                 </td>
                             </tr>
@@ -168,17 +177,23 @@
                                 <td class="tbs-table-group" style="pointer-events: none" colspan="6">
                                     Błędy</td>
                             </tr>
-                            <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
+                            <tr class="tb-table-edit tbs-table-item-tr-top tbs-table-item-tr-bottom">
                                 <td class="tbs-cell-icon"></td>
-                                <td class="font-weight-bold text-center" style="color: #DC3545">3.
-                                    Znaczący</td>
-                                <td style="color: #000000">Nie da się dodać pliku podczas tworzenia
-                                    dokumentu AP</td>
+                                <td class="font-weight-bold text-center" style="color: #DC3545"><select
+                                        class="tb-form-select">
+                                        <option value="1">Krytyczny</option>
+                                        <option selected value="2">Blokujący</option>
+                                        <option value="3">Znaczący</option>
+                                        <option value="4">Drobny</option>
+                                    </select></td>
+                                <td style="color: #000000"><input
+                                        value="Nie da się dodać pliku podczas tworzenia dokumentu AP"
+                                        class="tb-form-control tb-inline-edit"></td>
                                 <td class="text-right" style="color: #DC3545">1,20</td>
                                 <td class="text-center" style="color: #DC3545">
                                     <!--!-->&nbsp;
                                 </td>
-                                <td class="text-center" style="background-color: #FFFFFF">
+                                <td class="text-center">
                                     <!--!-->&nbsp;
                                 </td>
                             </tr>
@@ -282,8 +297,8 @@
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
                                 <td class="font-weight-bold tbs-cell-icon" style="background-color: #FFF7DD"><i
-                                        class="fal">
-                                        <!--!-->
+                                        class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center" style="background-color: #FFF7DD">1
                                 </td>
@@ -299,8 +314,8 @@
                                     Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-key">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">2</td>
                                 <td style="color: #000000">Realizacja - zmiany w wycenie zgłoszenia B2B
@@ -312,8 +327,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-sun">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">3</td>
                                 <td style="color: #000000">Realizacja - B2B w CFI - sposob rozliczen
@@ -325,8 +340,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-dog">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">4</td>
                                 <td style="color: #000000">Realizacja - [B2B] Tryby wyświetlania listy
@@ -339,8 +354,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">5</td>
                                 <td style="color: #000000">[B2B] Uzupełnienie brakujących tłumaczeń</td>
@@ -351,8 +366,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">6</td>
                                 <td style="color: #000000">[B2B] Niedziałający mechanizm generowania
@@ -364,8 +379,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">7</td>
                                 <td style="color: #000000">[Pomysł] Wprowadzenie ustawień do dostępu do
@@ -375,8 +390,8 @@
                                 <td class="text-center" style="background-color: #0000FF">Pomysł</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">8</td>
                                 <td style="color: #000000">VendoLite - Poprawienie styli na widoku
@@ -388,8 +403,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">9</td>
                                 <td style="color: #000000">[Pomysł] Dodanie ustawień do sortowania
@@ -399,8 +414,8 @@
                                 <td class="text-center" style="background-color: #0000FF">Pomysł</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">10</td>
                                 <td style="color: #000000">B 2 B | async | [218852/PT] [B2B] Wybór
@@ -414,8 +429,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">11</td>
                                 <td style="color: #000000">[Pomysł] Ponawianie zamówienia</td>
@@ -424,8 +439,8 @@
                                 <td class="text-center" style="background-color: #0000FF">Pomysł</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">12</td>
                                 <td style="color: #000000">Wykonanie zgłoszenia - dodawanie zdjec
@@ -437,8 +452,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">13</td>
                                 <td style="color: #000000">[B2B] Refactoring odzyskiwania hasła</td>
@@ -453,8 +468,8 @@
                                     Zadania Niepotwierdzone</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -469,8 +484,8 @@
                                     2022</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -485,8 +500,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -500,8 +515,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -514,8 +529,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -528,8 +543,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -543,8 +558,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -742,8 +757,8 @@
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
                                 <td class="font-weight-bold tbs-cell-icon" style="background-color: #FFF7DD"><i
-                                        class="fal">
-                                        <!--!-->
+                                        class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center" style="background-color: #FFF7DD">1
                                 </td>
@@ -759,8 +774,8 @@
                                     Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">2</td>
                                 <td style="color: #000000">Realizacja - zmiany w wycenie zgłoszenia B2B
@@ -772,8 +787,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">3</td>
                                 <td style="color: #000000">Realizacja - B2B w CFI - sposob rozliczen
@@ -785,8 +800,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">4</td>
                                 <td style="color: #000000">Realizacja - [B2B] Tryby wyświetlania listy
@@ -799,8 +814,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">5</td>
                                 <td style="color: #000000">[B2B] Uzupełnienie brakujących tłumaczeń</td>
@@ -811,8 +826,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">6</td>
                                 <td style="color: #000000">[B2B] Niedziałający mechanizm generowania
@@ -824,8 +839,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">7</td>
                                 <td style="color: #000000">[Pomysł] Wprowadzenie ustawień do dostępu do
@@ -835,8 +850,8 @@
                                 <td class="text-center" style="background-color: #0000FF">Pomysł</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">8</td>
                                 <td style="color: #000000">VendoLite - Poprawienie styli na widoku
@@ -848,8 +863,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">9</td>
                                 <td style="color: #000000">[Pomysł] Dodanie ustawień do sortowania
@@ -859,8 +874,8 @@
                                 <td class="text-center" style="background-color: #0000FF">Pomysł</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">10</td>
                                 <td style="color: #000000">B 2 B | async | [218852/PT] [B2B] Wybór
@@ -874,8 +889,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">11</td>
                                 <td style="color: #000000">[Pomysł] Ponawianie zamówienia</td>
@@ -884,8 +899,8 @@
                                 <td class="text-center" style="background-color: #0000FF">Pomysł</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">12</td>
                                 <td style="color: #000000">Wykonanie zgłoszenia - dodawanie zdjec
@@ -897,8 +912,8 @@
                                 </td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">13</td>
                                 <td style="color: #000000">[B2B] Refactoring odzyskiwania hasła</td>
@@ -913,8 +928,8 @@
                                     Zadania Niepotwierdzone</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -929,8 +944,8 @@
                                     2022</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -945,8 +960,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -960,8 +975,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -974,8 +989,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -988,8 +1003,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;
@@ -1003,8 +1018,8 @@
                                 <td class="text-center" style="background-color: #FFFF80">Style</td>
                             </tr>
                             <tr class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
-                                <td class="tbs-cell-icon"><i class="fal">
-                                        <!--!-->
+                                <td class="tbs-cell-icon"><i class="fa-solid fa-house">
+
                                     </i></td>
                                 <td class="font-weight-bold text-center">
                                     <!--!-->&nbsp;

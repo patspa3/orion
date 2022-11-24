@@ -23,6 +23,7 @@
             padding: var(--nav-item-padding);
             &:hover {
                 background-color: #475671;
+                border-radius: calc(var(--base-border-radius) * 2);
             }
             a {
                 display: flex;
@@ -31,6 +32,7 @@
                 color: var(--nav-item-color);
                 &:hover {
                     color: var(--nav-item-color-hover);
+                    
                 }
                 i {
                     width: 15px;

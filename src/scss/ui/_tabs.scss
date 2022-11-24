@@ -32,6 +32,9 @@
             &:not(:last-child) .tb-nav-link {
                 border-top-right-radius: 0;
             }
+            &:hover{
+                cursor: pointer;
+            }
             i{
                 margin-right: 6px;
             }
@@ -127,5 +130,8 @@
         max-height: calc(100% - 44px);
         overflow-y: auto;
         background-color: var(--tabs-body-background);
+        .tb-card:last-child{
+            margin-bottom: 0px;
+        }
     }
 }

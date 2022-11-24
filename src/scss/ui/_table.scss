@@ -15,10 +15,50 @@
         letter-spacing: 0.5px;
     }
     tbody {
+        tr {
+            &:not(.tb-table-edit):hover {
+                background-color: rgb(209 209 209 / 15%) !important;
+                td {
+                    background-color: rgb(209 209 209 / 15%) !important;
+                    background-blend-mode: multiply;
+                }
+            }
+        }
         .tb-table-edit {
             -webkit-box-shadow: inset 0px 0px 8px 0px rgb(217 217 217);
             -moz-box-shadow: inset 0px 0px 8px 0px rgb(217 217 217);
             box-shadow: inset 0px 0px 8px 0px rgb(217 217 217);
+            select {
+                padding: 0px 36px 0px 12px;
+                font-size: 14px;
+            }
+            input,
+            select {
+                border: none;
+                border-bottom: 2px solid #dedede;
+            }
+            input:focus,
+            input:hover,
+            select:focus,
+            select:hover {
+                border-bottom: 2px solid #307227;
+                outline: none;
+                box-shadow: none;
+            }
+            .tb-btn {
+                padding: 0px 6px;
+                border: none;
+                i {
+                    margin: 0px;
+                }
+                &:focus {
+                    box-shadow: none;
+                }
+                &:hover {
+                    background-color: #307227;
+                    color: #fff;
+                }
+            }
         }
     }
     td,

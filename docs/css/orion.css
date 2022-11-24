@@ -10999,6 +10999,7 @@ label, textarea {
 }
 .tb-navbar ul li:hover {
   background-color: #475671;
+  border-radius: calc(var(--base-border-radius) * 2);
 }
 .tb-navbar ul li a {
   display: flex;
@@ -11265,7 +11266,7 @@ footer {
   background-color: #dedede;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 2px;
+  border-radius: calc(var(--base-border-radius) * 2);
   color: black;
 }
 .tbs-ribbon .elements {
@@ -11360,6 +11361,9 @@ footer {
 .tb-card-tabs .tb-nav-tabs .tb-nav-item:not(:last-child) .tb-nav-link {
   border-top-right-radius: 0;
 }
+.tb-card-tabs .tb-nav-tabs .tb-nav-item:hover {
+  cursor: pointer;
+}
 .tb-card-tabs .tb-nav-tabs .tb-nav-item i {
   margin-right: 6px;
 }
@@ -11442,9 +11446,15 @@ footer {
   overflow-y: auto;
   background-color: var(--tabs-body-background);
 }
+.card-tabs-only .tab-content .tb-card:last-child {
+  margin-bottom: 0px;
+}
 
 .tb-card {
   margin-bottom: 12px;
+  -webkit-box-shadow: 0px 0px 10px px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 .tb-card .card-header {
   font-weight: 500;
@@ -11656,10 +11666,48 @@ label + .form-control-plaintext,
   font-weight: 500;
   letter-spacing: 0.5px;
 }
+.tb-table tbody tr:not(.tb-table-edit):hover {
+  background-color: rgba(209, 209, 209, 0.15) !important;
+}
+.tb-table tbody tr:not(.tb-table-edit):hover td {
+  background-color: rgba(209, 209, 209, 0.15) !important;
+  background-blend-mode: multiply;
+}
 .tb-table tbody .tb-table-edit {
   -webkit-box-shadow: inset 0px 0px 8px 0px rgb(217, 217, 217);
   -moz-box-shadow: inset 0px 0px 8px 0px rgb(217, 217, 217);
   box-shadow: inset 0px 0px 8px 0px rgb(217, 217, 217);
+}
+.tb-table tbody .tb-table-edit select {
+  padding: 0px 36px 0px 12px;
+  font-size: 14px;
+}
+.tb-table tbody .tb-table-edit input,
+.tb-table tbody .tb-table-edit select {
+  border: none;
+  border-bottom: 2px solid #dedede;
+}
+.tb-table tbody .tb-table-edit input:focus,
+.tb-table tbody .tb-table-edit input:hover,
+.tb-table tbody .tb-table-edit select:focus,
+.tb-table tbody .tb-table-edit select:hover {
+  border-bottom: 2px solid #307227;
+  outline: none;
+  box-shadow: none;
+}
+.tb-table tbody .tb-table-edit .tb-btn {
+  padding: 0px 6px;
+  border: none;
+}
+.tb-table tbody .tb-table-edit .tb-btn i {
+  margin: 0px;
+}
+.tb-table tbody .tb-table-edit .tb-btn:focus {
+  box-shadow: none;
+}
+.tb-table tbody .tb-table-edit .tb-btn:hover {
+  background-color: #307227;
+  color: #fff;
 }
 .tb-table td,
 .tb-table th {
@@ -12122,7 +12170,7 @@ label + .form-control-plaintext,
   --modal-width: 750px;
   --nav-width: 250px;
   --nav-mobile-width: 300px;
-  --nav-background-color: #404e67;
+  --nav-background-color: #373d53;
   --nav-item-color: #dcdcdc;
   --nav-item-color-hover: #eeeeee;
   --nav-item-padding: 3px 2px 3px 12px;
