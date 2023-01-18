@@ -1,5 +1,5 @@
 .tbs-ribbon {
-	font-family: "Nunito", sans-serif;
+	/*font-family: "Nunito", sans-serif;*/
 	font-size: 10px;
 	border-bottom: 1px solid var(--base-border-color);
 	background: #fafafa;
@@ -72,7 +72,7 @@
 	}
 	i {
 		font-size: 32px;
-		line-height: 48px!important;
+		line-height: 48px !important;
 	}
 	nav-link {
 		&:hover {
@@ -104,7 +104,7 @@
 			background-color: #dedede;
 			-webkit-border-radius: 2px;
 			-moz-border-radius: 2px;
-			border-radius: calc(var(--base-border-radius) * 2); 
+			border-radius: calc(var(--base-border-radius) * 2);
 			color: black;
 		}
 	}
@@ -182,5 +182,58 @@
 	.fluid-container {
 		padding-left: 0px !important;
 		padding-right: 0px !important;
+	}
+}
+
+.tb-ribbon-mini {
+	.tab-content {
+		.container {
+			display: flex;
+			.tb-ribbon-group {
+				display: flex;
+				flex-direction: column;
+				.elements {
+					flex: 1 1 auto;
+					display: flex;
+					/* vertical-align: middle; */
+					align-content: center;
+					flex-wrap: wrap;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					.one-element {
+						margin: 3px 3px -1px 3px;
+						div {
+							margin-bottom: 3px;
+							//max-height: 30px;
+						}
+						a {
+							//font-size: 14px;
+							padding: 0 5px;
+						}
+					}
+				}
+				.section-label {
+					flex: 0 1 15px;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.tab-content,
+	.tb-ribbon-group,
+	.elements,
+	.one-element {
+		height: inherit !important;
+	}
+	i {
+		font-size: 12px;
+		line-height: 1 !important;
+	}
+}
+.tb-no-icon {
+	i {
+		display: none;
 	}
 }

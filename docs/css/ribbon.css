@@ -1,5 +1,5 @@
 .tbs-ribbon {
-  font-family: "Nunito", sans-serif;
+  /*font-family: "Nunito", sans-serif;*/
   font-size: 10px;
   border-bottom: 1px solid var(--base-border-color);
   background: #fafafa;
@@ -161,4 +161,15 @@
 .tbs-ribbon .fluid-container {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+.tb-ribbon-mini .tab-content,
+.tb-ribbon-mini .tb-ribbon-group,
+.tb-ribbon-mini .elements,
+.tb-ribbon-mini .one-element {
+  height: min-content;
+}
+.tb-ribbon-mini i {
+  font-size: 12px;
+  line-height: 1;
 }

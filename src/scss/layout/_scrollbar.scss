@@ -1,11 +1,11 @@
-/* SCROLL START */
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 4px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #b3b3b3;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -16,7 +16,12 @@
     background: #555;
 }
 /* aside scroll fix*/
-aside::-webkit-scrollbar-track {
+aside ::-webkit-scrollbar-track {
     background: var(--nav-background-color);
 }
-/* SCROLL END */
+aside ::-webkit-scrollbar-thumb{
+    background-color: #525a7c;
+}
+aside ::-webkit-scrollbar-thumb:hover {
+    background: #5c658b;
+}

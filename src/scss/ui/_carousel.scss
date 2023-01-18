@@ -1,0 +1,9 @@
+.tb-carousel{
+    button{
+        &:focus,
+        &:active{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
