@@ -7,7 +7,7 @@ documentHeight();
 
 window.addEventListener("resize", navigationDisplay);
 function navigationDisplay() {
-  if ($(window).width() < 1023.99) {
+  if ($(window).width() < 992) {
     $("aside.tb-navbar").addClass("hide");
     $("aside.tb-navbar").removeClass("show");
   } else {
@@ -21,7 +21,7 @@ function navigationDisplay() {
 }
 
 $(document).ready(function () {
-  if ($(window).width() < 1023.99) {
+  if ($(window).width() < 992) {
     $("aside.tb-navbar").addClass("hide");
     $("aside.tb-navbar").removeClass("show");
   } else {

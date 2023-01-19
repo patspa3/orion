@@ -56,29 +56,44 @@
 					margin-top: 3px;
 					max-width: 100px;
 					text-overflow: ellipsis;
-					max-height: 25px;
 					overflow: hidden;
-					line-height: 1;
+					line-height: 1em;
+					height: 2em;
 					width: min-content;
 				}
 			}
 		}
 	}
-	nav {
-		font-weight: 600;
-		text-transform: uppercase;
-		color: #757575 !important;
+	.nav-tabs {
 		font-size: 14px;
+
+		.nav-link {
+			color: #757575 !important;
+			font-size: 14px;
+			background-color: transparent;
+			padding: 7px 30px;
+			color: #757575;
+			border:none; 
+			transition: 0.5s;
+			border-bottom: 3px solid var(--base-border-color);
+			&:hover {
+				background-color: #dedede !important;
+				color:#2c2c2c!important;
+				border-bottom: 3px solid rgb(138, 138, 138);
+			}
+		}
+		.nav-link.active {
+			border: none;
+			border-bottom: 3px solid rgb(138, 138, 138);
+			background-color: rgb(231, 231, 231);
+			color: #484848;
+		}
 	}
 	i {
 		font-size: 32px;
 		line-height: 48px !important;
 	}
-	nav-link {
-		&:hover {
-			background-color: #efefef !important;
-		}
-	}
+
 	.col-md-auto {
 		border-right: 1px solid #dedede;
 		height: 100px;
@@ -99,6 +114,7 @@
 		margin: 5px 5px 0px 5px;
 		overflow: hidden;
 		height: 78px;
+		transition: background-color 0.3s ease;
 		&:hover {
 			text-decoration: none;
 			background-color: #dedede;
@@ -147,23 +163,6 @@
 			padding: 2px;
 		}
 	}
-	.nav-tabs {
-		border: none;
-		font-size: 14px;
-		.nav-link.active {
-			border: none;
-			border-bottom: 3px solid red;
-			background-color: transparent;
-			color: #484848;
-		}
-		.nav-link {
-			border: none;
-			border-bottom: 3px solid #efefef;
-			background-color: transparent;
-			padding: 7px 30px;
-			color: #757575;
-		}
-	}
 	.test {
 		display: grid;
 		grid-template-rows: repeat(3, 25px);
@@ -205,7 +204,8 @@
 						margin: 3px 3px -1px 3px;
 						div {
 							margin-bottom: 3px;
-							//max-height: 30px;
+							font-size: 11px;
+							max-height: 24px;
 						}
 						a {
 							//font-size: 14px;
@@ -236,4 +236,9 @@
 	i {
 		display: none;
 	}
+}
+
+.content + .tbs-ribbon{
+	border-bottom: none;
+	border-top:1px solid var(--base-border-color);
 }

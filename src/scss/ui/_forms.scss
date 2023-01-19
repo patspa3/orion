@@ -21,21 +21,20 @@
 	font-size: 13px;
 }
 
-.tb-form-control{
+.tb-form-control {
 	@extend .form-control;
 	border-radius: var(--button-border-radius);
 	border-color: var(--base-border-color);
 	font-size: 15px;
 }
 
-.tb-form-select{
+.tb-form-select {
 	@extend .form-select;
 	border-radius: var(--button-border-radius);
 	border-color: var(--base-border-color);
 	font-size: 15px;
 }
-.tb-form-group{
-	
+.tb-form-group {
 }
 
 .tb-form-control:focus,
@@ -91,7 +90,9 @@ $columns: 12;
 	}
 }
 
-.tb-plaintext{
-	padding-left: 6px;
-    /*border-left: 3px solid #da8f04*/
+.tb-plaintext {
+	word-break: break-all;
+	overflow-wrap: break-word;
+	padding-left: 3px;
+	/*border-left: 3px solid #da8f04*/
 }

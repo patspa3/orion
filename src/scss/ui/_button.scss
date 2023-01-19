@@ -16,3 +16,36 @@
     //border-color: var(--base-border-color);
     border-radius: var(--base-border-radius);
 }
+.tb-button-group {
+	button {
+        background-color: var(--tb-button-bg);
+		display: inline-flex;
+		align-content: center;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: nowrap;
+		margin-bottom: 6px;
+		div {
+			display: inline-block;
+            color:var(--tb-button-color)!important;
+		}
+        i{
+            color:var(--tb-button-color)!important;
+        }
+	}
+}
+.tb-button-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 220px);
+	grid-row-gap: 4px;
+	grid-column-gap: 8px;
+	justify-content: center;
+	button {
+        display: grid;
+        grid-template-columns: 50px calc(100% - 50px);
+		padding: 10px;
+		i {
+			font-size: 40px;
+		}
+	}
+}

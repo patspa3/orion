@@ -1,16 +1,38 @@
-.tb-table-container{
+.tb-table-container {
     overflow-x: auto;
     flex: 1 0 auto;
     margin-bottom: 1em;
-    &:last-child{
+    &:last-child {
         margin-bottom: 0px;
     }
-    .tb-table{
+    .tb-table {
         margin-bottom: 0px;
+    }
+    .tb-table-searchbar {
+        position: sticky;
+        top:0px;
+        .tb-input-group {
+            input:focus {
+                outline: none;
+                box-shadow: none;
+                border-color: var(--base-border-color);
+            }
+            button{
+                background-color: #f8f8f8;
+                &:hover{
+                    background-color: #e0e0e0;
+                    border-color: var(--base-border-color);
+                }
+            }
+
+            * {
+                border-bottom: 0px;
+            }
+        }
     }
 }
-
 .tb-fill {
+   
     max-height: fit-content;
     overflow: auto;
     flex: 1 1 auto;
@@ -43,11 +65,27 @@
             }
         }
     }
+    .tb-table-searchbar {
+        + .tb-table{
+            thead{
+            top: 37px;
+            }
+        }
+        .tb-input-group {
+            * {
+                border-top: 0px;
+                border-bottom: 1px solid var(--base-border-color);
+            }
+            .tb-input-group-append{
+                border-bottom:none;
+            }
+
+        }
+    }
 }
 
 .tb-fill + .tb-fill,
 .tb-fill + .tb-table-container {
-   
 }
 .tb-table {
     table-layout: fixed;

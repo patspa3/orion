@@ -30,7 +30,9 @@
             li {
                 list-style: none;
                 padding: var(--nav-item-padding);
+                //transition: background-color 0.3s ease;
                 &:hover {
+                    //transition: 0s;
                     background-color: #475671;
                     border-radius: calc(var(--base-border-radius) * 2);
                 }
@@ -46,8 +48,6 @@
                         width: 15px;
                         margin-right: 12px;
                         margin-top: 3px;
-                    }
-                    span {
                     }
                 }
             }
@@ -99,7 +99,7 @@
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 991px) {
     .tb-navbar {
         display: none;
         position: absolute;
