@@ -30,9 +30,11 @@
             li {
                 list-style: none;
                 padding: var(--nav-item-padding);
-                //transition: background-color 0.3s ease;
+                margin:2px 0px;
+                transition: background-color 0.1s ease;
+                border-radius: calc(var(--base-border-radius) * 2);
                 &:hover {
-                    //transition: 0s;
+                    transition: 0s;
                     background-color: #475671;
                     border-radius: calc(var(--base-border-radius) * 2);
                 }

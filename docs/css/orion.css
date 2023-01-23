@@ -11008,8 +11008,12 @@ label, textarea {
 .tb-navbar .tb-navbar-content ul li {
   list-style: none;
   padding: var(--nav-item-padding);
+  margin: 2px 0px;
+  transition: background-color 0.1s ease;
+  border-radius: calc(var(--base-border-radius) * 2);
 }
 .tb-navbar .tb-navbar-content ul li:hover {
+  transition: 0s;
   background-color: #475671;
   border-radius: calc(var(--base-border-radius) * 2);
 }
@@ -11761,6 +11765,7 @@ label + .form-control-plaintext,
 .tb-table-container .tb-table-searchbar {
   position: sticky;
   top: 0px;
+  left: 0px;
 }
 .tb-table-container .tb-table-searchbar .tb-input-group input:focus {
   outline: none;
@@ -11900,12 +11905,20 @@ label + .form-control-plaintext,
   text-align: center;
 }
 
+.tb-table-multirow tbody:hover tr, .tb-table-multirow tbody:hover td {
+  background-color: rgba(209, 209, 209, 0.15) !important;
+}
+
 .tb-card-body > .tb-table-container {
   margin: -12px;
   border: none;
 }
 .tb-card-body > .tb-table-container > .tb-table {
   margin-bottom: 0px;
+}
+
+.tb-table-active {
+  background-color: #e6f2fa;
 }
 
 /* Editable */
@@ -12350,20 +12363,34 @@ label + .form-control-plaintext,
   color: var(--tb-button-color) !important;
 }
 
-.tb-button-grid {
+.tb-button-grid, .tb-button-grid-square {
   display: grid;
   grid-template-columns: repeat(auto-fit, 220px);
   grid-row-gap: 4px;
   grid-column-gap: 8px;
   justify-content: center;
 }
-.tb-button-grid button {
+.tb-button-grid button, .tb-button-grid-square button {
   display: grid;
   grid-template-columns: 50px calc(100% - 50px);
   padding: 10px;
 }
-.tb-button-grid button i {
+.tb-button-grid button i, .tb-button-grid-square button i {
   font-size: 40px;
+}
+
+.tb-button-grid-square button {
+  grid-template-rows: 146px 72px;
+  grid-template-columns: none;
+  width: 220px;
+  height: 220px;
+}
+.tb-button-grid-square button i {
+  font-size: 110px;
+  display: block;
+}
+.tb-button-grid-square button div {
+  display: block;
 }
 
 .tb-carousel button:focus, .tb-carousel button:active {

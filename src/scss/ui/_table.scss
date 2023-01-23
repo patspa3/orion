@@ -10,16 +10,17 @@
     }
     .tb-table-searchbar {
         position: sticky;
-        top:0px;
+        top: 0px;
+        left:0px;
         .tb-input-group {
             input:focus {
                 outline: none;
                 box-shadow: none;
                 border-color: var(--base-border-color);
             }
-            button{
+            button {
                 background-color: #f8f8f8;
-                &:hover{
+                &:hover {
                     background-color: #e0e0e0;
                     border-color: var(--base-border-color);
                 }
@@ -32,7 +33,6 @@
     }
 }
 .tb-fill {
-   
     max-height: fit-content;
     overflow: auto;
     flex: 1 1 auto;
@@ -66,9 +66,9 @@
         }
     }
     .tb-table-searchbar {
-        + .tb-table{
-            thead{
-            top: 37px;
+        + .tb-table {
+            thead {
+                top: 37px;
             }
         }
         .tb-input-group {
@@ -76,10 +76,9 @@
                 border-top: 0px;
                 border-bottom: 1px solid var(--base-border-color);
             }
-            .tb-input-group-append{
-                border-bottom:none;
+            .tb-input-group-append {
+                border-bottom: none;
             }
-
         }
     }
 }
@@ -171,6 +170,16 @@
         text-align: center;
     }
 }
+.tb-table-multirow {
+    tbody {
+        &:hover{
+            tr,td{
+            background-color: rgb(209 209 209 / 15%) !important;
+            }
+        }
+    }
+}
+
 .tb-table-bordered {
     @extend .table-bordered;
 }
@@ -182,6 +191,11 @@
             margin-bottom: 0px;
         }
     }
+}
+
+.tb-table-active{
+background-color: #e6f2fa;
+
 }
 
 /* Editable */

@@ -1,24 +1,24 @@
 .tb-btn-group {
-    @extend .btn-group;
+	@extend .btn-group;
 }
 .tb-form-control-plaintext {
-    @extend .form-control-plaintext;
+	@extend .form-control-plaintext;
 }
 
 .tb-btn {
-    @extend .btn;
-    *:focus {
-        box-shadow: none;
-    }
-    i{
-        margin-right:6px
-    }
-    //border-color: var(--base-border-color);
-    border-radius: var(--base-border-radius);
+	@extend .btn;
+	*:focus {
+		box-shadow: none;
+	}
+	i {
+		margin-right: 6px;
+	}
+	//border-color: var(--base-border-color);
+	border-radius: var(--base-border-radius);
 }
 .tb-button-group {
 	button {
-        background-color: var(--tb-button-bg);
+		background-color: var(--tb-button-bg);
 		display: inline-flex;
 		align-content: center;
 		align-items: center;
@@ -27,11 +27,11 @@
 		margin-bottom: 6px;
 		div {
 			display: inline-block;
-            color:var(--tb-button-color)!important;
+			color: var(--tb-button-color) !important;
 		}
-        i{
-            color:var(--tb-button-color)!important;
-        }
+		i {
+			color: var(--tb-button-color) !important;
+		}
 	}
 }
 .tb-button-grid {
@@ -41,11 +41,27 @@
 	grid-column-gap: 8px;
 	justify-content: center;
 	button {
-        display: grid;
-        grid-template-columns: 50px calc(100% - 50px);
+		display: grid;
+		grid-template-columns: 50px calc(100% - 50px);
 		padding: 10px;
 		i {
 			font-size: 40px;
+		}
+	}
+}
+.tb-button-grid-square {
+	@extend .tb-button-grid;
+	button {
+		grid-template-rows: 146px 72px;
+		grid-template-columns: none;
+		width: 220px;
+		height: 220px;
+		i {
+			font-size: 110px;
+			display: block;
+		}
+		div{
+			display: block;
 		}
 	}
 }
