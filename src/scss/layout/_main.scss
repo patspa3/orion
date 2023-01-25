@@ -14,7 +14,7 @@ body{
 a{
     text-decoration: none;
 }
-label,textarea{
+label,textarea,code{
     user-select: text;
 }
 
@@ -38,4 +38,10 @@ label,textarea{
     -webkit-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 25px -4px rgba(0,0,0,0.75);
+}
+.tb-left{
+    float: left!important;
+}
+.tb-right{
+    float: right!important;
 }

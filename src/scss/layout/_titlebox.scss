@@ -1,17 +1,17 @@
 .title-box {
     padding: 8px 0px;
     flex: 0 1 40px;
-    background: #FAFAFA;
+    background: #fafafa;
     min-height: 40px;
     border-bottom: 1px solid var(--base-border-color);
-    
+
     .navbar-toggler {
         float: left;
         position: relative;
-        display: inline-block;
+        display: none;
         border: none;
         background-color: inherit;
-
+        margin-top: 2px;
         .navbar-toggler-icon {
             height: 2px;
             width: 1.25em;
@@ -40,20 +40,39 @@
             }
         }
     }
-    .title-box-title{
+    .title-box-title {
         width: calc(100% - 120px);
         display: inline-block;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        color:#6c757d;
+        color: #6c757d;
     }
-    .title-box-exit{
-        float:right;
+    .title-box-exit {
+        float: left;
         cursor: pointer;
         display: block;
     }
 }
-.navbar + .page .title-box-exit{
+aside.tb-navbar + section.page .title-box-exit {
     visibility: hidden;
-} 
+}
+aside.tb-navbar + section.page .navbar-toggler {
+    display: inline-block;
+}
+
+.title-box-exit .tb-btn-back {
+    @extend .btn-close;
+    background: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fal' data-icon='long-arrow-left' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' class='svg-inline--fa fa-long-arrow-left fa-w-14 fa-7x'%3E%3Cpath fill='blue' d='M136.97 380.485l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273H436c6.627 0 12-5.373 12-12v-10c0-6.627-5.373-12-12-12H60.113l83.928-83.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-116.485 116c-4.686 4.686-4.686 12.284 0 16.971l116.485 116c4.686 4.686 12.284 4.686 16.97-.001z' class=''%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+}
+.title-box-exit .tb-custom-back {
+    @extend .btn-close;
+    background: none;
+    width: auto;
+    height: auto;
+    padding-top: 0px;
+    i{
+        font-size: 24px;
+    }
+}

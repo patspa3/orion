@@ -7,12 +7,17 @@
 
 .tb-btn {
 	@extend .btn;
+	padding: 6px 18px;
 	*:focus {
 		box-shadow: none;
 	}
 	i {
-		margin-right: 6px;
+		/*margin-right: 6px;*/
+		+ div {
+			margin-left: 6px;
+		}
 	}
+
 	//border-color: var(--base-border-color);
 	border-radius: var(--base-border-radius);
 }
@@ -46,6 +51,9 @@
 		padding: 10px;
 		i {
 			font-size: 40px;
+			+ div {
+				margin-left: 0px;
+			}
 		}
 	}
 }
@@ -60,7 +68,7 @@
 			font-size: 110px;
 			display: block;
 		}
-		div{
+		div {
 			display: block;
 		}
 	}

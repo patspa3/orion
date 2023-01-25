@@ -11,7 +11,7 @@
     .tb-table-searchbar {
         position: sticky;
         top: 0px;
-        left:0px;
+        left: 0px;
         .tb-input-group {
             input:focus {
                 outline: none;
@@ -87,6 +87,7 @@
 .tb-fill + .tb-table-container {
 }
 .tb-table {
+    vertical-align: middle;
     table-layout: fixed;
     @extend .table;
     font-size: 13px;
@@ -172,9 +173,16 @@
 }
 .tb-table-multirow {
     tbody {
-        &:hover{
-            tr,td{
-            background-color: rgb(209 209 209 / 15%) !important;
+        &:nth-child(2n) {
+            tr,
+            td {
+                background-color: rgba(226, 226, 226, 0.15) !important;
+            }
+        }
+        &:hover {
+            tr,
+            td {
+                background-color: rgb(209 209 209 / 15%) !important;
             }
         }
     }
@@ -193,9 +201,8 @@
     }
 }
 
-.tb-table-active{
-background-color: #e6f2fa;
-
+.tb-table-active {
+    background-color: #e6f2fa;
 }
 
 /* Editable */

@@ -1,0 +1,31 @@
+div.tb-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 14px;
+    &::before,
+    &::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #c3c4c5;
+    }
+    &:not(:empty)::before {
+        margin-right: 0.25em;
+    }
+    &:not(:empty)::after {
+        margin-left: 0.25em;
+    }
+    &.tb-left {
+        float: none!important;
+        &::before {
+            content: none;
+        }
+    } 
+    &.tb-right {
+        float: none!important;
+        &::after {
+            content: none;
+        }
+    }
+}

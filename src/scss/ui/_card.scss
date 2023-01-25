@@ -8,5 +8,17 @@
     
     .card-header{
         font-weight: 500;
+        > button{
+            margin-left: 6px;
+            
+            border: 1px solid var(--base-border-color);
+            &:focus{
+                box-shadow: none;
+                border: 1px solid var(--base-border-color);
+            }
+            i{
+                margin-right: 0px;
+            }
+        }
     }
 }
