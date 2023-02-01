@@ -185,6 +185,11 @@
                 background-color: rgb(209 209 209 / 15%) !important;
             }
         }
+        &::before{
+            display: table-row-group;
+            height:24px;
+            content: "";
+        }
     }
 }
 

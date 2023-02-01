@@ -142,5 +142,8 @@
         margin-top: 39px;
         height: calc(var(--dev-page-height) - 39px);
         width: var(--nav-mobile-width);
+        .tb-navbar-brand{
+            display: none;
+        }
     }
 }
