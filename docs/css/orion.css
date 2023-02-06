@@ -10999,6 +10999,7 @@ label, textarea, code {
   flex-flow: column;
 }
 .tb-navbar .tb-navbar-content {
+  width: var(--nav-width);
   display: flex;
   overflow-y: scroll;
   flex-direction: column;
@@ -11386,10 +11387,11 @@ aside.tb-navbar + section.page .navbar-toggler {
   padding: 7px 30px;
   color: #757575;
   border: none;
-  transition: 0.5s;
+  transition: background-color 0.5s;
   border-bottom: 3px solid var(--base-border-color);
 }
 .tbs-ribbon .nav-tabs .nav-link:hover, .tbs-ribbon .nav-tabs .tb-nav-link:hover, .tbs-ribbon .tb-nav-tabs .nav-link:hover, .tbs-ribbon .tb-nav-tabs .tb-nav-link:hover {
+  transition: border-bottom 0.5s;
   background-color: #dedede !important;
   color: #2c2c2c !important;
   border-bottom: 3px solid rgb(138, 138, 138);
@@ -11429,6 +11431,7 @@ aside.tb-navbar + section.page .navbar-toggler {
   background-color: #dedede;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
+  transition: border-bottom 0.5s;
   border-radius: calc(var(--base-border-radius) * 2);
   color: black;
 }
@@ -11483,6 +11486,9 @@ aside.tb-navbar + section.page .navbar-toggler {
   padding-right: 0px !important;
 }
 
+.tb-ribbon-mini .nav-tabs a.nav-link, .tb-ribbon-mini .nav-tabs a.tb-nav-link, .tb-ribbon-mini .tb-nav-tabs a.nav-link, .tb-ribbon-mini .tb-nav-tabs a.tb-nav-link {
+  padding: 3px 30px;
+}
 .tb-ribbon-mini .tab-content .container {
   display: flex;
 }
@@ -11972,9 +11978,7 @@ label + .form-control-plaintext,
   background-color: #fff !important;
 }
 .tb-table tbody .tb-table-edit {
-  -webkit-box-shadow: inset 0px 0px 8px 0px rgb(217, 217, 217);
-  -moz-box-shadow: inset 0px 0px 8px 0px rgb(217, 217, 217);
-  box-shadow: inset 0px 0px 8px 0px rgb(217, 217, 217);
+  background-color: #f8f8f8;
 }
 .tb-table tbody .tb-table-edit select {
   padding: 0px 36px 0px 12px;
@@ -12298,7 +12302,7 @@ label + .form-control-plaintext,
 .tb-modal {
   position: absolute !important;
   backdrop-filter: blur(1.5px);
-  overflow-y: auto;
+  overflow-y: hidden;
   max-height: 100vh;
 }
 .tb-modal .tb-modal-dialog .tb-modal-content {
@@ -12686,6 +12690,11 @@ div.tb-separator.tb-right {
 }
 div.tb-separator.tb-right::after {
   content: none;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
 }
 
 :root {

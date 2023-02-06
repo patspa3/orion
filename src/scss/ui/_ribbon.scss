@@ -74,9 +74,10 @@
 			padding: 7px 30px;
 			color: #757575;
 			border:none; 
-			transition: 0.5s;
+			transition: background-color 0.5s;
 			border-bottom: 3px solid var(--base-border-color);
 			&:hover {
+				transition: border-bottom 0.5s;
 				background-color: #dedede !important;
 				color:#2c2c2c!important;
 				border-bottom: 3px solid rgb(138, 138, 138);
@@ -120,6 +121,7 @@
 			background-color: #dedede;
 			-webkit-border-radius: 2px;
 			-moz-border-radius: 2px;
+			transition: border-bottom 0.5s;
 			border-radius: calc(var(--base-border-radius) * 2);
 			color: black;
 		}
@@ -185,6 +187,11 @@
 }
 
 .tb-ribbon-mini {
+	.nav-tabs{
+		a.nav-link{
+		padding: 3px 30px;
+		}
+	}
 	.tab-content {
 		.container {
 			display: flex;
@@ -219,6 +226,7 @@
 				}
 			}
 		}
+		
 	}
 
 	.tab-content,

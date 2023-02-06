@@ -2,7 +2,7 @@
     @extend .modal;
     position: absolute !important;
     backdrop-filter: blur(1.5px);
-    overflow-y: auto;
+    overflow-y: hidden;
     max-height: 100vh;
     .tb-modal-dialog {
         @extend .modal-dialog;

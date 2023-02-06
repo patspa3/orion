@@ -15,6 +15,7 @@
     overflow: hidden;
     flex-flow: column;
     .tb-navbar-content {
+        width: var(--nav-width);
         display: flex;
         overflow-y: scroll;
         flex-direction: column;
