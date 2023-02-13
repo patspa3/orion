@@ -1,0 +1,749 @@
+<!doctype html>
+<html translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="css/orion.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper-fluid container-fluid">
+        <!-- wrapper container - oznacza tryb box i umożliwia użycie zmiennej --base-site-max-width -->
+        <aside class="tb-navbar show">
+            <div class="tb-navbar-content">
+                <a class="tb-navbar-brand" href="#"><img class="img-fluid"
+                        src="https://lite-dev.vendoerp.com/images/logo.png" /></a>
+                <ul>
+                    <li class="tb-nav-title"><a href="#"><span>Link</span></a></li>
+                    <li><a href="index.html"><i style="color:rgb(14, 184, 71);"
+                                class="fa-solid fa-house"></i><span>Index</span></a></li>
+                    <li><a href="nestedview.html"><i style="color:rgb(255, 217, 0);"
+                                class="fa-solid fa-layer-group"></i><span>Nested View
+                                base<b>(Experimental)</b></span></a></li>
+                    <li><a href="nestedviewadvanced.html"><i style="color:rgb(168, 143, 0);"
+                                class="fa-solid fa-layer-group"></i><span>Nested View
+                                advanced<b>(Experimental)</b></span></a></li>
+                    <li><a href="liderraport.html"><i class="fa-solid fa-pen"></i><span>Raport Lidera</span></a></li>
+                    <li><a href="modal.html"><i class="fa-solid fa-bomb"></i><span>Modal</span></a></li>
+                    <li><a href="longmodal.html"><i class="fa-solid fa-bomb"></i><span>Long Modal</span></a></li>
+                    <li><a href="scheduler.html"><i class="fa-solid fa-filter"></i><span>Scheduler</span></a></li>
+                    <li><a href="timespan.html"><i class="fa-solid fa-lock"></i><span>TimeSpan</span></a></li>
+                    <li><a href="radio.html"><i class="fa-solid fa-bomb"></i><span>Radio</span></a></li>
+                    <li><a href="forms.html"><i class="fa-solid fa-bomb"></i><span>Forms</span></a></li>
+                    <li><a href="formsROM.html"><i class="fa-solid fa-bomb"></i><span>Forms read only mode</span></a>
+                    </li>
+                    <li><a href="colors.html"><i class="fa-solid fa-pen"></i><span>Colors</span></a></li>
+                    <li><a href="table.html"><i style="color:rgb(87, 241, 72);"
+                                class="fa-solid fa-table"></i><span>Editable
+                                table</span></a></li>
+                    <li><a href="listfill.html"><i class="fa-solid fa-film"></i><span>List fill</span></a></li>
+                    <li><a href="carousel.html"><i style="color:rgb(116, 96, 230)"
+                                class="fa-solid fa-image"></i><span>Carousel </span></a></li>
+                    <li><a href="clearbs.html"><i class="fa-solid fa-house"></i><span>Clear Bootstrap</span></a></li>
+                    <li><a href="ribbonalt.html"><i class="fa-solid fa-house"></i><span>Ribbon</span></a></li>
+                    <li><a href="canban.html"><i class="fa-solid fa-house"></i><span>Canban</span></a></li>
+                    <li><a href="buttons.html"><i class="fa-solid fa-house"></i><span>Buttons</span></a></li>
+                    <li><a href="multilinelist.html"><i class="fa-solid fa-house"></i><span>Multi Line
+                                List</b></span></a></li>
+                    <li><a href="separator.html"><i class="fa-solid fa-house"></i><span>Separators
+                                <b>(New)</b></span></a></li>
+                    <li><a href="nomenu.html"><i class="fa-solid fa-house"></i><span>Non navigation</span></a></li>
+                    <li><a href="commands.html"><i class="fa-solid fa-house"></i><span>Commands
+                                <b>(Experimental)</b></span></a></li>
+                    <li><a href="collapsemenu.html"><i class="fa-solid fa-house"></i><span>Collapse menu </span></a>
+                    </li>
+                    <li><a href="loginpage.html"><i class="fa-solid fa-house"></i><span>Login page </span></a></li>
+                    <li><a href="iframe.html"><i class="fa-solid fa-house"></i><span>Iframe page <b>(New)</b></span></a></li>
+                    <li><a href="iframeModal.html"><i class="fa-solid fa-house"></i><span>Iframe Modal page <b>(New)</b></span></a></li>
+                    <li><a href="elements.html"><i class="fa-solid fa-house"></i><span>Elements <b>(New)</b></span></a></li>
+                    <li><a href="markdown.html"><i class="fa-solid fa-house"></i><span>Markdown Timeline <b>(New)</b></span></a></li>
+                    <li><a href="navwithlist.html"><i class="fa-solid fa-house"></i><span>Nav with button and list <b>(New)</b></span></a></li>
+                    <li><a href="blank.html"><i class="fa-solid fa-house"></i><span>Blank page</span></a></li>
+                                <li class="tb-nav-title"><a href="#"><span>Link</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-music"></i><span>Link</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-music"></i>
+                            <span>Link sd asd asd asd asd asd asdddsaasasd</span>
+                        </a></li>
+                    <li><a href="#"><i class="fa-solid fa-music"></i><span>Link</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-bomb"></i><span>Link</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-house"></i><span>Link</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-image"></i><span>Link</span></a></li>
+                </ul>
+            </div>
+            <footer>
+                <div class="tb-footer-left">
+                    <div class="tb-footer-item"><a class="text-light" href="#">Wyloguj</a></div>
+                </div>
+                <div class="tb-footer-right">
+                    <div class="form-check form-switch tb-footer-item">
+                        <label class="form-check-label" for="boxSwitch">
+                            <i class="fa-solid fa-expand"></i>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="boxSwitch">
+                    </div>
+                    <div class="form-check form-switch tb-footer-item">
+                        <label class="form-check-label" for="lightSwitch">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch">
+                    </div>
+                </div>
+            </footer>
+        </aside>
+        <section class="page">
+            <div class="title-box text-center">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                    <div class="title-box-title">Markdown Timeline Page</div>
+                    <div class="title-box-exit"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button></div>
+                </div>
+            </div>
+            <div class="tbs-ribbon">
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="tbs-ribbon-element-1"
+                        aria-labelledby="tbs-ribbon-element-1-tab" role="tabpanel">
+                        <div class="container text-left">
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-film"></i>
+                                            <div>Show In New Window</div>
+                                        </a></div>
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-music"></i>
+                                            <div>View Code</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Example</div>
+                            </div>
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-image"></i>
+                                            <div>Show Designer</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Playground</div>
+                            </div>
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                style="color:rgb(14, 184, 71);" class="fa-solid fa-house"></i>
+                                            <div>About</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Other</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-12"><!--!-->
+                        <div id="CurrentExample.Instance_MarkupTimelineExample_History" _bl_26=""><!--!-->
+                            <div style="background-color: inherit;">
+                                <ul style="list-style-type: none; padding: 0">
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://John Snow"
+                                                    style="font-weight: bold">John Snow</a> on 2020-11-02 <b
+                                                    style="font-weight: bold">API to provide the current system time</b>
+                                            </div>
+                                            <div class="card-body">There is a small difference exists between
+                                                implementations, but in most cases it can be moved out. In case of
+                                                Kestrel's clock which has a specific logic inside, there could be made a
+                                                new interface IScopedSystemClock which will provide the scope start time
+                                                as UtcNow does now. Therefore, looks like all of them could be merged
+                                                into a single class/interface and put into
+                                                Microsoft.Extensions.Primitives.<br><br><a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 2 attachments</a> <a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 1 commit</a> </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://James Bond" style="font-weight: bold">James Bond</a> added
+                                            the <span class="badge rounded-pill text-bg-primary">Feature</span> label on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://Tony Soprano" style="font-weight: bold">Tony Soprano</a>
+                                            assigned this issue to <a class="link-dark text-decoration-none"
+                                                href="user://Marty McFly" style="font-weight: bold">Marty McFly</a> on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://Indiana Jones"
+                                                    style="font-weight: bold">Indiana Jones</a> on 2020-11-06 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Is Feature
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">YES</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Version
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">.NET 5</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Has
+                                                        Prototype</div>
+                                                    <div class="col-4" style="font-weight: bold">NO</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Priority
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">Can Wait</div>
+                                                </div>
+                                                <hr class="mt-2">Actually I do not think it is needed we already have
+                                                DateTime.UtcNow. However it could be useful for those who do not know
+                                                about DateTime/ DateTimeOffset.<br><br> Also what is the reasoning for
+                                                DateTimeOffset.UtcNow over just DateTime.UtcNow anyway?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Robin Hood" style="font-weight: bold">Robin Hood</a> on
+                                                2020-11-07</span><br>It's impossible to mock statics in case of tests.
+                                            The last but not least is that DI means that there should be no statics and
+                                            ability to replace any implementation by what you want, different and
+                                            incompatible patterns to be clear.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Rocky Balboa" style="font-weight: bold">Rocky
+                                                    Balboa</a> on 2020-11-10</span><br>It's super important for testing.
+                                            Mocking things that are non deterministic is important for testing things
+                                            like timeouts.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><span class="align-middle me-1 mr-1"
+                                                    style="font-size: 140%">🦖</span> <a
+                                                    class="link-dark text-decoration-none" href="user://Sherlock Holmes"
+                                                    style="font-weight: bold">Sherlock Holmes</a> on 2020-11-11 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">We have plenty of API it would be good to mock, but
+                                                is either sealed or static. Example: File. It seems it wasn't a primary
+                                                design criterion way back. Should we be thinking holistically about our
+                                                attitude towards mockability, rather than thinking about just this one
+                                                type? It might not need to be solved through API for example this
+                                                proposal. Even if we want to enable it through API design, we should
+                                                have a consistent pattern so it's discoverable, useable etc. I haven't
+                                                kept up with the latest in mocking/DI - do we have established patterns?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Jay Gatsby" style="font-weight: bold">Jay Gatsby</a> on
+                                                2020-11-15</span><br>We could expose a new type, but what does this mean
+                                            for the existing packages that already defined their own version of
+                                            ISystemClock, like auth? Would we break them?</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://John Snow"
+                                                    style="font-weight: bold">John Snow</a> on 2020-11-02 <b
+                                                    style="font-weight: bold">API to provide the current system time</b>
+                                            </div>
+                                            <div class="card-body">There is a small difference exists between
+                                                implementations, but in most cases it can be moved out. In case of
+                                                Kestrel's clock which has a specific logic inside, there could be made a
+                                                new interface IScopedSystemClock which will provide the scope start time
+                                                as UtcNow does now. Therefore, looks like all of them could be merged
+                                                into a single class/interface and put into
+                                                Microsoft.Extensions.Primitives.<br><br><a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 2 attachments</a> <a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 1 commit</a> </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://James Bond" style="font-weight: bold">James Bond</a> added
+                                            the <span class="badge rounded-pill text-bg-primary">Feature</span> label on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://Tony Soprano" style="font-weight: bold">Tony Soprano</a>
+                                            assigned this issue to <a class="link-dark text-decoration-none"
+                                                href="user://Marty McFly" style="font-weight: bold">Marty McFly</a> on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://Indiana Jones"
+                                                    style="font-weight: bold">Indiana Jones</a> on 2020-11-06 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Is Feature
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">YES</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Version
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">.NET 5</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Has
+                                                        Prototype</div>
+                                                    <div class="col-4" style="font-weight: bold">NO</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Priority
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">Can Wait</div>
+                                                </div>
+                                                <hr class="mt-2">Actually I do not think it is needed we already have
+                                                DateTime.UtcNow. However it could be useful for those who do not know
+                                                about DateTime/ DateTimeOffset.<br><br> Also what is the reasoning for
+                                                DateTimeOffset.UtcNow over just DateTime.UtcNow anyway?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Robin Hood" style="font-weight: bold">Robin Hood</a> on
+                                                2020-11-07</span><br>It's impossible to mock statics in case of tests.
+                                            The last but not least is that DI means that there should be no statics and
+                                            ability to replace any implementation by what you want, different and
+                                            incompatible patterns to be clear.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Rocky Balboa" style="font-weight: bold">Rocky
+                                                    Balboa</a> on 2020-11-10</span><br>It's super important for testing.
+                                            Mocking things that are non deterministic is important for testing things
+                                            like timeouts.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><span class="align-middle me-1 mr-1"
+                                                    style="font-size: 140%">🦖</span> <a
+                                                    class="link-dark text-decoration-none" href="user://Sherlock Holmes"
+                                                    style="font-weight: bold">Sherlock Holmes</a> on 2020-11-11 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">We have plenty of API it would be good to mock, but
+                                                is either sealed or static. Example: File. It seems it wasn't a primary
+                                                design criterion way back. Should we be thinking holistically about our
+                                                attitude towards mockability, rather than thinking about just this one
+                                                type? It might not need to be solved through API for example this
+                                                proposal. Even if we want to enable it through API design, we should
+                                                have a consistent pattern so it's discoverable, useable etc. I haven't
+                                                kept up with the latest in mocking/DI - do we have established patterns?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Jay Gatsby" style="font-weight: bold">Jay Gatsby</a> on
+                                                2020-11-15</span><br>We could expose a new type, but what does this mean
+                                            for the existing packages that already defined their own version of
+                                            ISystemClock, like auth? Would we break them?</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://John Snow"
+                                                    style="font-weight: bold">John Snow</a> on 2020-11-02 <b
+                                                    style="font-weight: bold">API to provide the current system time</b>
+                                            </div>
+                                            <div class="card-body">There is a small difference exists between
+                                                implementations, but in most cases it can be moved out. In case of
+                                                Kestrel's clock which has a specific logic inside, there could be made a
+                                                new interface IScopedSystemClock which will provide the scope start time
+                                                as UtcNow does now. Therefore, looks like all of them could be merged
+                                                into a single class/interface and put into
+                                                Microsoft.Extensions.Primitives.<br><br><a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 2 attachments</a> <a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 1 commit</a> </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://James Bond" style="font-weight: bold">James Bond</a> added
+                                            the <span class="badge rounded-pill text-bg-primary">Feature</span> label on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://Tony Soprano" style="font-weight: bold">Tony Soprano</a>
+                                            assigned this issue to <a class="link-dark text-decoration-none"
+                                                href="user://Marty McFly" style="font-weight: bold">Marty McFly</a> on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://Indiana Jones"
+                                                    style="font-weight: bold">Indiana Jones</a> on 2020-11-06 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Is Feature
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">YES</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Version
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">.NET 5</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Has
+                                                        Prototype</div>
+                                                    <div class="col-4" style="font-weight: bold">NO</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Priority
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">Can Wait</div>
+                                                </div>
+                                                <hr class="mt-2">Actually I do not think it is needed we already have
+                                                DateTime.UtcNow. However it could be useful for those who do not know
+                                                about DateTime/ DateTimeOffset.<br><br> Also what is the reasoning for
+                                                DateTimeOffset.UtcNow over just DateTime.UtcNow anyway?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Robin Hood" style="font-weight: bold">Robin Hood</a> on
+                                                2020-11-07</span><br>It's impossible to mock statics in case of tests.
+                                            The last but not least is that DI means that there should be no statics and
+                                            ability to replace any implementation by what you want, different and
+                                            incompatible patterns to be clear.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Rocky Balboa" style="font-weight: bold">Rocky
+                                                    Balboa</a> on 2020-11-10</span><br>It's super important for testing.
+                                            Mocking things that are non deterministic is important for testing things
+                                            like timeouts.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><span class="align-middle me-1 mr-1"
+                                                    style="font-size: 140%">🦖</span> <a
+                                                    class="link-dark text-decoration-none" href="user://Sherlock Holmes"
+                                                    style="font-weight: bold">Sherlock Holmes</a> on 2020-11-11 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">We have plenty of API it would be good to mock, but
+                                                is either sealed or static. Example: File. It seems it wasn't a primary
+                                                design criterion way back. Should we be thinking holistically about our
+                                                attitude towards mockability, rather than thinking about just this one
+                                                type? It might not need to be solved through API for example this
+                                                proposal. Even if we want to enable it through API design, we should
+                                                have a consistent pattern so it's discoverable, useable etc. I haven't
+                                                kept up with the latest in mocking/DI - do we have established patterns?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Jay Gatsby" style="font-weight: bold">Jay Gatsby</a> on
+                                                2020-11-15</span><br>We could expose a new type, but what does this mean
+                                            for the existing packages that already defined their own version of
+                                            ISystemClock, like auth? Would we break them?</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://John Snow"
+                                                    style="font-weight: bold">John Snow</a> on 2020-11-02 <b
+                                                    style="font-weight: bold">API to provide the current system time</b>
+                                            </div>
+                                            <div class="card-body">There is a small difference exists between
+                                                implementations, but in most cases it can be moved out. In case of
+                                                Kestrel's clock which has a specific logic inside, there could be made a
+                                                new interface IScopedSystemClock which will provide the scope start time
+                                                as UtcNow does now. Therefore, looks like all of them could be merged
+                                                into a single class/interface and put into
+                                                Microsoft.Extensions.Primitives.<br><br><a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 2 attachments</a> <a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 1 commit</a> </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://James Bond" style="font-weight: bold">James Bond</a> added
+                                            the <span class="badge rounded-pill text-bg-primary">Feature</span> label on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://Tony Soprano" style="font-weight: bold">Tony Soprano</a>
+                                            assigned this issue to <a class="link-dark text-decoration-none"
+                                                href="user://Marty McFly" style="font-weight: bold">Marty McFly</a> on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://Indiana Jones"
+                                                    style="font-weight: bold">Indiana Jones</a> on 2020-11-06 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Is Feature
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">YES</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Version
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">.NET 5</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Has
+                                                        Prototype</div>
+                                                    <div class="col-4" style="font-weight: bold">NO</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Priority
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">Can Wait</div>
+                                                </div>
+                                                <hr class="mt-2">Actually I do not think it is needed we already have
+                                                DateTime.UtcNow. However it could be useful for those who do not know
+                                                about DateTime/ DateTimeOffset.<br><br> Also what is the reasoning for
+                                                DateTimeOffset.UtcNow over just DateTime.UtcNow anyway?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Robin Hood" style="font-weight: bold">Robin Hood</a> on
+                                                2020-11-07</span><br>It's impossible to mock statics in case of tests.
+                                            The last but not least is that DI means that there should be no statics and
+                                            ability to replace any implementation by what you want, different and
+                                            incompatible patterns to be clear.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Rocky Balboa" style="font-weight: bold">Rocky
+                                                    Balboa</a> on 2020-11-10</span><br>It's super important for testing.
+                                            Mocking things that are non deterministic is important for testing things
+                                            like timeouts.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><span class="align-middle me-1 mr-1"
+                                                    style="font-size: 140%">🦖</span> <a
+                                                    class="link-dark text-decoration-none" href="user://Sherlock Holmes"
+                                                    style="font-weight: bold">Sherlock Holmes</a> on 2020-11-11 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">We have plenty of API it would be good to mock, but
+                                                is either sealed or static. Example: File. It seems it wasn't a primary
+                                                design criterion way back. Should we be thinking holistically about our
+                                                attitude towards mockability, rather than thinking about just this one
+                                                type? It might not need to be solved through API for example this
+                                                proposal. Even if we want to enable it through API design, we should
+                                                have a consistent pattern so it's discoverable, useable etc. I haven't
+                                                kept up with the latest in mocking/DI - do we have established patterns?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Jay Gatsby" style="font-weight: bold">Jay Gatsby</a> on
+                                                2020-11-15</span><br>We could expose a new type, but what does this mean
+                                            for the existing packages that already defined their own version of
+                                            ISystemClock, like auth? Would we break them?</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://John Snow"
+                                                    style="font-weight: bold">John Snow</a> on 2020-11-02 <b
+                                                    style="font-weight: bold">API to provide the current system time</b>
+                                            </div>
+                                            <div class="card-body">There is a small difference exists between
+                                                implementations, but in most cases it can be moved out. In case of
+                                                Kestrel's clock which has a specific logic inside, there could be made a
+                                                new interface IScopedSystemClock which will provide the scope start time
+                                                as UtcNow does now. Therefore, looks like all of them could be merged
+                                                into a single class/interface and put into
+                                                Microsoft.Extensions.Primitives.<br><br><a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 2 attachments</a> <a
+                                                    class="mb-3 px-2 py-1 fw-semibold text-primary bg-primary bg-opacity-10 border border-primary border-opacity-10 rounded-4 text-decoration-none"
+                                                    href="todo"><i class="fa align-middle me-1 mr-1"
+                                                        style="font-size: 150%"></i> 1 commit</a> </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://James Bond" style="font-weight: bold">James Bond</a> added
+                                            the <span class="badge rounded-pill text-bg-primary">Feature</span> label on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="ms-4 ml-4"><i class="fa align-middle me-1 mr-1"
+                                                style="font-size: 150%"></i> <a class="link-dark text-decoration-none"
+                                                href="user://Tony Soprano" style="font-weight: bold">Tony Soprano</a>
+                                            assigned this issue to <a class="link-dark text-decoration-none"
+                                                href="user://Marty McFly" style="font-weight: bold">Marty McFly</a> on
+                                            2020-11-04</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><i class="fa align-middle me-1 mr-1"
+                                                    style="font-size: 150%"></i> <a
+                                                    class="link-dark text-decoration-none" href="user://Indiana Jones"
+                                                    style="font-weight: bold">Indiana Jones</a> on 2020-11-06 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Is Feature
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">YES</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Version
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">.NET 5</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Has
+                                                        Prototype</div>
+                                                    <div class="col-4" style="font-weight: bold">NO</div>
+                                                    <div class="col-2 text-secondary" style="max-width:100px">Priority
+                                                    </div>
+                                                    <div class="col-4" style="font-weight: bold">Can Wait</div>
+                                                </div>
+                                                <hr class="mt-2">Actually I do not think it is needed we already have
+                                                DateTime.UtcNow. However it could be useful for those who do not know
+                                                about DateTime/ DateTimeOffset.<br><br> Also what is the reasoning for
+                                                DateTimeOffset.UtcNow over just DateTime.UtcNow anyway?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Robin Hood" style="font-weight: bold">Robin Hood</a> on
+                                                2020-11-07</span><br>It's impossible to mock statics in case of tests.
+                                            The last but not least is that DI means that there should be no statics and
+                                            ability to replace any implementation by what you want, different and
+                                            incompatible patterns to be clear.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Rocky Balboa" style="font-weight: bold">Rocky
+                                                    Balboa</a> on 2020-11-10</span><br>It's super important for testing.
+                                            Mocking things that are non deterministic is important for testing things
+                                            like timeouts.</div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="card">
+                                            <div class="card-header"><span class="align-middle me-1 mr-1"
+                                                    style="font-size: 140%">🦖</span> <a
+                                                    class="link-dark text-decoration-none" href="user://Sherlock Holmes"
+                                                    style="font-weight: bold">Sherlock Holmes</a> on 2020-11-11 <b
+                                                    style="font-weight: bold"></b></div>
+                                            <div class="card-body">We have plenty of API it would be good to mock, but
+                                                is either sealed or static. Example: File. It seems it wasn't a primary
+                                                design criterion way back. Should we be thinking holistically about our
+                                                attitude towards mockability, rather than thinking about just this one
+                                                type? It might not need to be solved through API for example this
+                                                proposal. Even if we want to enable it through API design, we should
+                                                have a consistent pattern so it's discoverable, useable etc. I haven't
+                                                kept up with the latest in mocking/DI - do we have established patterns?
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="mt-3">
+                                        <div class="alert alert-secondary mt-3 pt-2 pb-2 ms-4 ml-4"><span
+                                                style="font-size: 90%"><a class="link-dark text-decoration-none"
+                                                    href="user://Jay Gatsby" style="font-weight: bold">Jay Gatsby</a> on
+                                                2020-11-15</span><br>We could expose a new type, but what does this mean
+                                            for the existing packages that already defined their own version of
+                                            ISystemClock, like auth? Would we break them?</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12"><!--!-->
+                        <div class="form-group"><!--!--><label style="max-height: 150px">New Message</label><!--!-->
+                            <div class="row">
+                                <div class="col"><!--!--><textarea class="form-control"
+                                        id="CurrentExample.Instance_MarkupTimelineExample_NewMessage" name="NewMessage"
+                                        rows="3" max-rows="12" maxlength="32767" _bl_27=""
+                                        style="height: 76px;"></textarea></div>
+                                <div class="col-auto pl-0"><!--!-->
+                                    <div class="d-inline"><!--!--><button class="btn" type="button"
+                                            data-toggle="tooltip" title="Send"><i
+                                                class="material-icons"><!--!--></i></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

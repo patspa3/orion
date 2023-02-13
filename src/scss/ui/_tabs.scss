@@ -93,6 +93,7 @@
             color: var(--tabs-nav-link-color);
             border-top: none !important;
             font-size: var(--tabs-font-size);
+            cursor: pointer;
             &.active,
             &:active,
             &:hover {

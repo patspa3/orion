@@ -1,0 +1,265 @@
+<!doctype html>
+<html translate="no">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link href="css/orion.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper-fluid container-fluid">
+        <!-- wrapper container - oznacza tryb box i umożliwia użycie zmiennej --base-site-max-width -->
+        <aside class="tb-navbar show">
+            <div class="tb-navbar-content">
+                <a class="tb-navbar-brand" href="#"><img class="img-fluid"
+                        src="https://lite-dev.vendoerp.com/images/logo.png"></a>
+                <div class="row text-center">
+                    <div class="col-12">
+                        <button class="tb-btn btn-outline" type="button"><i class="fa-solid fa-plus"
+                                style="color: red"></i></button>
+                        <button class="tb-btn btn-warning btn-outline" type="button"><i class="fa-solid fa-minus"
+                                style="color: rgb(238, 92, 243)"></i></button>
+                        <button class="tb-btn btn-success btn-outline" type="button"><i class="fa-solid fa-minus"
+                                style="color: #f48823"></i></button>
+                        <button class="tb-btn btn-primary btn-outline" type="button"><i class="fa-solid fa-plus"
+                                style="color: #7ac01e"></i>
+                            <div>Add</div>
+                        </button>
+                        <button class="tb-btn btn-secondary btn-outline" type="button"><i class="fa-solid fa-plus"
+                                style="color: #1ec097"></i>
+                            <div>Add</div>
+                        </button>
+                        <button class="tb-btn btn-danger btn-outline" type="button"><i class="fa-solid fa-plus"
+                                style="color: #ff74ff"></i>
+                            <div>Delete</div>
+                        </button>
+                    </div>
+                </div>
+                <div class="tb-table-container">
+                    <table class="tb-table tb-table-bordered">
+                        <tbody>
+                            <tr>
+                                <td>Option 1</td>
+                            </tr>
+                            <tr>
+                                <td>Option 2</td>
+                            </tr>
+                            <tr>
+                                <td>Option 3</td>
+                            </tr>
+                            <tr>
+                                <td>Option 4</td>
+                            </tr>
+                            <tr>
+                                <td>Option 5</td>
+                            </tr>
+                            <tr>
+                                <td>Option 6</td>
+                            </tr>
+                            <tr>
+                                <td>Option 7</td>
+                            </tr>
+                            <tr>
+                                <td>Option 8</td>
+                            </tr>
+                            <tr>
+                                <td>Option 9</td>
+                            </tr>
+                            <tr>
+                                <td>Option 10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <footer>
+                <div class="tb-footer-left">
+                    <div class="tb-footer-item"><a class="text-light" href="#">Wyloguj</a></div>
+                </div>
+                <div class="tb-footer-right">
+                    <div class="form-check form-switch tb-footer-item">
+                        <label class="form-check-label" for="boxSwitch">
+                            <i class="fa-solid fa-expand"></i>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="boxSwitch">
+                    </div>
+                    <div class="form-check form-switch tb-footer-item">
+                        <label class="form-check-label" for="lightSwitch">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </label>
+                        <input class="form-check-input" type="checkbox" id="lightSwitch">
+                    </div>
+                </div>
+            </footer>
+        </aside>
+        <section class="page">
+            <div class="title-box text-center">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button"><span class="navbar-toggler-icon"></span></button>
+                    <div class="title-box-title">Nav with list Page</div>
+                    <div class="title-box-exit"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tbs-ribbon">
+                <div class="tab-content">
+                    <div class="tab-pane fade active show" id="tbs-ribbon-element-1"
+                        aria-labelledby="tbs-ribbon-element-1-tab" role="tabpanel">
+                        <div class="container text-left">
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-film"></i>
+                                            <div>Show In New Window</div>
+                                        </a></div>
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-music"></i>
+                                            <div>View Code</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Example</div>
+                            </div>
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                class="fa-solid fa-image"></i>
+                                            <div>Show Designer</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Playground</div>
+                            </div>
+                            <div class="tb-ribbon-group">
+                                <div class="elements text-center">
+                                    <div class="one-element large-element"><a tabindex="-1" href="javascript:void(0)"><i
+                                                style="color:rgb(14, 184, 71);" class="fa-solid fa-house"></i>
+                                            <div>About</div>
+                                        </a></div>
+                                </div>
+                                <div class="section-label text-center">Other</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card-tabs-only" id="Designer_CardDesignerViewModel_Pages">
+                    <div class="tbs-pc-h">
+                        <ul class="tbs-pc-nv tb-nav tb-nav-tabs">
+                            <li class="tbs-pc-nv-it tb-nav-item"><a class="tb-nav-link active">Structure</a></li>
+                            <li class="tbs-pc-nv-it tb-nav-item"><a class="tb-nav-link">Commands</a></li>
+                            <li class="tbs-pc-nv-it tb-nav-item"><a class="tb-nav-link">Permissions</a></li>
+                            <li class="tbs-pc-nv-it tb-nav-item"><a class="tb-nav-link">Settings</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tbs-pc-c tb-card-body"><!--!--><!--!-->
+                            <div class="row border-top-0">
+                                <div class="col-4" style="max-width: 350px"><!--!--><!--!-->
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="tb-button-group tb-base-button">
+                                                <button class="tb-btn btn-outline" type="button"><i class="fa-solid fa-plus" style="color: red"></i></button>
+                                                <button class="tb-btn btn-warning btn-outline" type="button"><i class="fa-solid fa-minus" style="color: rgb(238, 92, 243)"></i></button>
+                                                <button class="tb-btn btn-success btn-outline" type="button"><i class="fa-solid fa-minus" style="color: #f48823"></i></button>
+                                                <button class="tb-btn btn-primary btn-outline" type="button"><i class="fa-solid fa-plus" style="color: #7ac01e"></i>
+                                                    <div>Add</div>
+                                                </button>
+                                                <button class="tb-btn btn-secondary btn-outline" type="button"><i class="fa-solid fa-plus" style="color: #1ec097"></i>
+                                                    <div>Add</div>
+                                                </button>
+                                                <button class="tb-btn btn-danger btn-outline" type="button"><i class="fa-solid fa-plus" style="color: #ff74ff"></i>
+                                                    <div>Delete</div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col-12"><!--!-->
+                                            <div class="row">
+                                                <div class="col-12"><!--!--></div>
+                                                <div class="w-100"></div>
+                                                <div class="col-12"><!--!--><!--!-->
+                                                    <div class="tb-table-container">
+                                                        <table class="tb-table table-bordered"
+                                                            hotkeys="space,ctrl a,enter,arrowup,arrowdown" tabindex="0">
+                                                            <colgroup>
+                                                                <col class="tbs-table-column"
+                                                                    style="width: 100%; min-width: 150px">
+                                                            </colgroup>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th oncontextmenu="return false">Caption</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr
+                                                                    class="table-active tbs-table-item-tr-top tbs-table-item-tr-bottom">
+                                                                    <td>General</td>
+                                                                </tr>
+                                                                <tr
+                                                                    class="tbs-table-item-tr-top tbs-table-item-tr-bottom">
+                                                                    <td>Group 2</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div><!--!-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col"><!--!--><!--!-->
+                                    <div class="row">
+                                        <div class="col-12"><!--!-->
+                                            <div class="tb-card">
+                                                <div class="card-header">General</div>
+                                                <div class="card-body"><!--!-->
+                                                    <div class="row">
+                                                        <div class="col-12"><!--!-->
+                                                            <div class="form-group"><!--!--><label class="tb-form-label"
+                                                                    style="max-height: 150px">Custom
+                                                                    Caption</label><!--!--><input type="text"
+                                                                    class="tb-form-control"
+                                                                    id="Designer.Pages.85e2bbd0fed048b886f68af28e1c2557.Elements.FocusedRow_PageGroupViewModel_CustomCaption"
+                                                                    name="CustomCaption" maxlength="32767"></div>
+                                                        </div>
+                                                        <div class="col-12"><!--!-->
+                                                            <div class="form-check tb-form-group"><!--!--><input
+                                                                    type="checkbox" class="form-check-input"
+                                                                    id="Designer.Pages.85e2bbd0fed048b886f68af28e1c2557.Elements.FocusedRow_PageGroupViewModel_Visible"
+                                                                    name="Visible" _bl_3=""><!--!--><label
+                                                                    class="form-check-label"
+                                                                    style="max-height: 150px">Visible</label></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
