@@ -2,7 +2,7 @@
     @extend .navbar;
 }
 .tb-navbar {
-    height: 100vh;
+    height: 100%;
     display: flex;
     min-width: var(--nav-width);
     /*flex-direction: row;
@@ -160,7 +160,7 @@
         display: none;
         position: absolute;
         margin-top: 39px;
-        height: calc(var(--dev-page-height) - 39px);
+        height: calc(100% - 39px);
         width: var(--nav-width);
         .tb-navbar-brand{
             //display: none;
