@@ -29,6 +29,11 @@
             width: 100%;
             /*flex: 1 1 auto;*/
             li {
+                &.active{
+                    transition: 0s;
+                    background-color: #475671;
+                    border-radius: calc(var(--base-border-radius) * 2);
+                }
                 list-style: none;
                 padding: var(--nav-item-padding);
                 margin: 2px 0px;

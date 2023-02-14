@@ -3,6 +3,7 @@ const documentHeight = () => {
   doc.style.setProperty("--dev-page-height", `${window.innerHeight}px`);
 };
 window.addEventListener("resize", documentHeight);
+window.addEventListener("orientationchange", documentHeight);
 documentHeight();
 
 window.addEventListener("resize", navigationDisplay);

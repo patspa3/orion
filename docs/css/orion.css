@@ -11021,6 +11021,11 @@ label, textarea, code {
   transition: background-color 0.1s ease;
   border-radius: calc(var(--base-border-radius) * 2);
 }
+.tb-navbar .tb-navbar-content ul li.active {
+  transition: 0s;
+  background-color: #475671;
+  border-radius: calc(var(--base-border-radius) * 2);
+}
 .tb-navbar .tb-navbar-content ul li:hover {
   transition: 0s;
   background-color: #475671;
