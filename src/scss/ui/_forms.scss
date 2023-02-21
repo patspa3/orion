@@ -19,6 +19,9 @@
 	margin-bottom: 0.1rem;
 	color: #777;
 	font-size: 13px;
+	&:empty{
+		display: none;
+	}
 }
 
 .tb-form-control {
@@ -80,6 +83,9 @@ $columns: 12;
 	.col-#{$i} {
 		margin-top: 0px;
 		margin-bottom: 6px;
+		&:empty{
+			display: none;
+		}
 	}
 }
 
@@ -87,6 +93,9 @@ $columns: 12;
 	.col-md-#{$i} {
 		margin-top: 0px;
 		margin-bottom: 6px;
+		&:empty{
+			display: none;
+		}
 	}
 }
 
