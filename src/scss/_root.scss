@@ -2,7 +2,7 @@
 --dev-page-height:100%;
 
 --base-border-color: #dedede;
---base-border-radius: 2px;
+--base-border-radius: 4px;
 
 --base-content-padding: 12px 16px;
 --base-site-max-width: 1500px;
@@ -10,7 +10,7 @@
 --base-font: OpenSans;//TODO
 --base-font-size: 12px;
 
---modal-radius: 0px; //Max 30px
+--modal-radius: var(--base-border-radius);; //Max 30px
 --modal-header-background-color: #354052;
 --modal-header-font-size: 12px;
 --modal-header-font-color: white;
@@ -52,5 +52,10 @@
 
 --scheduler-background: white;
 
---button-border-radius:2px;
+--button-border-radius:var(--base-border-radius);
+
+}
+.tb-card{
+    --bs-card-inner-border-radius: var(--base-border-radius);
+    --bs-card-border-radius: var(--base-border-radius);
 }

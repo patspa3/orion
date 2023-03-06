@@ -117,6 +117,7 @@
 		margin: 5px 5px 0px 5px;
 		overflow: hidden;
 		height: 78px;
+		border-radius: var(--base-border-radius);
 		transition: background-color 0.3s ease;
 		&:hover {
 			text-decoration: none;
@@ -124,7 +125,7 @@
 			-webkit-border-radius: 2px;
 			-moz-border-radius: 2px;
 			transition: border-bottom 0.5s;
-			border-radius: calc(var(--base-border-radius) * 2);
+			border-radius: var(--base-border-radius);
 			color: black;
 		}
 	}

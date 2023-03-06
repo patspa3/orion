@@ -11441,6 +11441,7 @@ aside.tb-navbar + section.page .navbar-toggler {
   margin: 5px 5px 0px 5px;
   overflow: hidden;
   height: 78px;
+  border-radius: var(--base-border-radius);
   transition: background-color 0.3s ease;
 }
 .tbs-ribbon .one-element:hover {
@@ -11449,7 +11450,7 @@ aside.tb-navbar + section.page .navbar-toggler {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   transition: border-bottom 0.5s;
-  border-radius: calc(var(--base-border-radius) * 2);
+  border-radius: var(--base-border-radius);
   color: black;
 }
 .tbs-ribbon .elements {
@@ -12558,7 +12559,7 @@ label + .form-control-plaintext,
 
 .tb-btn {
   padding: 6px 18px;
-  border-radius: var(--base-border-radius);
+  border-radius: var(--button-border-radius);
 }
 .tb-btn *:focus {
   box-shadow: none;
@@ -12798,13 +12799,13 @@ iframe {
 :root {
   --dev-page-height:100%;
   --base-border-color: #dedede;
-  --base-border-radius: 2px;
+  --base-border-radius: 4px;
   --base-content-padding: 12px 16px;
   --base-site-max-width: 1500px;
   --base-background-color: #f8f8f8;
   --base-font: OpenSans;
   --base-font-size: 12px;
-  --modal-radius: 0px;
+  --modal-radius: var(--base-border-radius);
   --modal-header-background-color: #354052;
   --modal-header-font-size: 12px;
   --modal-header-font-color: white;
@@ -12838,5 +12839,10 @@ iframe {
   --footer-background: #ebebeb;
   --footer-border-color: var(--base-border-color);
   --scheduler-background: white;
-  --button-border-radius:2px;
+  --button-border-radius:var(--base-border-radius);
+}
+
+.tb-card {
+  --bs-card-inner-border-radius: var(--base-border-radius);
+  --bs-card-border-radius: var(--base-border-radius);
 }
